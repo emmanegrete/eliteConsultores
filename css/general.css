@@ -45,6 +45,14 @@ background-image: linear-gradient(to left, #969696 0%, #030303 100%);
 }
 
 .padding20{
-	padding: 2.5em;
+	padding: 1.5em;
+}
+
+.padding10{
+	padding: 0.5em;
+}
+
+.margin10{
+	margin:0.5em 0;
 }
 
