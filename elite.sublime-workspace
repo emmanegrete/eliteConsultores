@@ -1,0 +1,665 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mi",
+				"miColor"
+			],
+			[
+				"s",
+				"style"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"bs",
+				"box-shadow"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"b",
+				"background"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"di",
+				"d-i	display: inline;"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"men",
+				"mensajeMail"
+			],
+			[
+				"nombre",
+				"nombreMail"
+			],
+			[
+				"me",
+				"mensajeMail"
+			],
+			[
+				"em",
+				"emailMail"
+			],
+			[
+				"n",
+				"nombreMail"
+			],
+			[
+				"email",
+				"emailMail"
+			],
+			[
+				"fo",
+				"fs-o	font-style: oblique;"
+			],
+			[
+				"bd",
+				"bd+	border: ${1:1px} ${2:solid} ${3:#000};"
+			],
+			[
+				"t",
+				"type"
+			],
+			[
+				"IM",
+				"img	Tag"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"r",
+				"rgba()"
+			],
+			[
+				"inner",
+				"innerHTML"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"FON",
+				"font-size"
+			],
+			[
+				"va",
+				"var2"
+			],
+			[
+				"var",
+				"var1"
+			],
+			[
+				"VA",
+				"var2"
+			],
+			[
+				"jso",
+				"jsonInfo"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"ar",
+				"article	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "video 2 dvds \n\nbluray\n\n",
+			"settings":
+			{
+				"buffer_size": 23,
+				"line_ending": "Windows",
+				"name": "video 2 dvds"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 334.0,
+		"selected_items":
+		[
+			[
+				"fet",
+				"Fetch: Package"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"fetc",
+				"Fetch: File"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"f",
+				"Fetch: Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"pac",
+				"Package Control: Enable Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"fe",
+				"Fetch: Manage"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"disc",
+				"Package Control: Discover Packages"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 609.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/BarezzitoMiami/css/escritorio.css",
+		"/C/Users/IMPULZA 03/Desktop/pruebaBoxShadow.html",
+		"/C/Users/IMPULZA 03/Desktop/pruebaAnimacion.html",
+		"/C/xampp/htdocs/BarezzitoMiami/index.php",
+		"/C/xampp/htdocs/n00b/bootstrap/index.html",
+		"/C/xampp/htdocs/BarezzitoMiami/css/escritorio_mediano.css",
+		"/C/xampp/htdocs/BarezzitoMiami/cabeza.php",
+		"/C/xampp/htdocs/BarezzitoMiami/css/escritorio_chico.css",
+		"/C/Users/IMPULZA 03/AppData/Roaming/Sublime Text 2/Packages/CSScomb/Default.sublime-keymap",
+		"/C/Users/IMPULZA 03/AppData/Roaming/Sublime Text 2/Packages/CSScomb/CSScomb.sublime-settings",
+		"/C/xampp/htdocs/mobilBarezzitoUSA/correoReservacion.php",
+		"/C/xampp/htdocs/mobilBarezzitoUSA/chek.php",
+		"/C/Users/IMPULZA 03/AppData/Roaming/Sublime Text 2/Packages/CSScomb/README.md",
+		"/C/xampp/htdocs/mobilBarezzitoUSA/index.php",
+		"/C/xampp/htdocs/BarezzitoMiami/chek.php",
+		"/C/xampp/htdocs/BarezzitoMiami/correoReservacion.php",
+		"/C/xampp/htdocs/BarezzitoMiami/js/functions_bzz.js",
+		"/C/xampp/htdocs/BarezzitoMiami/js/functions.js",
+		"/C/xampp/htdocs/Impulza/css/escritorio_chico.css",
+		"/C/Users/IMPULZA 03/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/xampp/htdocs/mobilBarezzitoUSA/units.php",
+		"/C/xampp/htdocs/mobilBarezzitoUSA/css/jqueryMobile.css",
+		"/C/xampp/htdocs/mobilBarezzitoUSA/css/principal.css",
+		"/C/xampp/htdocs/mobilBarezzitoUSA/concept.php",
+		"/C/xampp/htdocs/mobilBarezzitoUSA/galeria/monterrey.html",
+		"/C/xampp/htdocs/Impulza/index.php",
+		"/C/xampp/htdocs/Impulza/cabeza.php",
+		"/C/xampp/htdocs/Impulza/js/functions.js",
+		"/C/xampp/htdocs/Impulza/js/functions_inicio.js",
+		"/C/xampp/htdocs/mobilBarezzitoUSA/pies.php",
+		"/C/xampp/htdocs/mobilBarezzitoUSA/cabeza.php",
+		"/C/xampp/htdocs/mobilBarezzitoUSA/js/galeria.js",
+		"/C/xampp/htdocs/mobilBarezzitoUSA/mail.php",
+		"/C/Users/IMPULZA 03/AppData/Roaming/Sublime Text 2/Packages/User/Fetch.sublime-settings",
+		"/C/xampp/htdocs/n00b/foundation/index.html",
+		"/C/xampp/htdocs/n00b/sublime_stuff.html",
+		"/C/Users/IMPULZA 03/Documents/IMPULZA/WEB/insumos/plugins/FullscreenBookBlock/index.html",
+		"/C/xampp/htdocs/mobileImpulza/index.html",
+		"/C/xampp/htdocs/mobilBarezzitoUSA/js/principal.js",
+		"/C/Users/IMPULZA 03/Desktop/cabeza.php",
+		"/C/Users/IMPULZA 03/Documents/IMPULZA/WEB/insumos/plugins/FullscreenBookBlock/js/jquery.mousewheel.js",
+		"/C/Users/IMPULZA 03/Documents/IMPULZA/WEB/insumos/plugins/FullscreenBookBlock/js/jquery.jscrollpane.min.js",
+		"/C/Users/IMPULZA 03/Documents/IMPULZA/WEB/insumos/plugins/FullscreenBookBlock/css/custom.css",
+		"/C/Users/IMPULZA 03/Documents/IMPULZA/WEB/insumos/plugins/FullscreenBookBlock/js/jquery.bookblock.js",
+		"/C/Users/IMPULZA 03/Documents/IMPULZA/WEB/insumos/plugins/FullscreenBookBlock/js/page.js",
+		"/C/xampp/htdocs/prueba/index.php",
+		"/C/xampp/htdocs/prueba/js/jquery.js",
+		"/C/xampp/htdocs/prueba/js/asensor.js",
+		"/C/xampp/htdocs/prueba/js/modernizer.js",
+		"/C/xampp/htdocs/prueba/js/plugins.js",
+		"/C/xampp/htdocs/prueba/js/script.js",
+		"/C/xampp/htdocs/prueba/css/boilerplate.css",
+		"/C/xampp/htdocs/prueba/css/style.css",
+		"/C/Users/IMPULZA 03/Desktop/escritorio_chico.css",
+		"/C/xampp/htdocs/ImpulzaIngles/cabeza.php",
+		"/C/xampp/htdocs/Impulza/veintiuno.php",
+		"/C/xampp/htdocs/Impulza/barezzito.php",
+		"/C/Users/IMPULZA 03/Desktop/.htaccess",
+		"/C/xampp/htdocs/Impulza - copia/.htaccess",
+		"/C/xampp/htdocs/Impulza/css/escritorio_grande.css",
+		"/C/xampp/htdocs/Impulza/css/escritorio_mediano.css",
+		"/C/xampp/htdocs/Impulza/css/escritorio.css",
+		"/C/xampp/htdocs/Impulza/cantinitas_chilanguitas.php",
+		"/C/xampp/htdocs/Impulza/la_puerta_de_alcala.php",
+		"/C/xampp/php/php.ini",
+		"/C/xampp/htdocs/Impulza/prive.php",
+		"/C/Users/IMPULZA 03/Desktop/contactos",
+		"/C/xampp/htdocs/Impulza/pies.php",
+		"/C/xampp/htdocs/Impulza/acercaDe.html",
+		"/C/xampp/htdocs/Impulza/.htaccess",
+		"/C/xampp/htdocs/Impulza/galerias/chilanguitas/chilanguita_acapulco.php",
+		"/C/xampp/htdocs/Impulza/set.php",
+		"/C/Users/IMPULZA 03/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/xampp/htdocs/Impulza/santissima.php",
+		"/C/xampp/htdocs/Impulza/galerias/lpda/polanco_la_puerta_de_alcala.php",
+		"/C/xampp/htdocs/Impulza/galerias/lpda/monterrey_la_puerta_de_alcala.php",
+		"/C/xampp/htdocs/Impulza/galerias/lpda/san_luis_potosi_la_puerta_de_alcala.php",
+		"/C/xampp/htdocs/Impulza/js/functions_lpda.js",
+		"/C/xampp/htdocs/json/claseJSON/mi_galeria_divertida.php",
+		"/C/xampp/htdocs/json/claseJSON/index.php",
+		"/C/xampp/htdocs/Impulza/galerias/lpda/polanco/360/polanco_360.html",
+		"/C/xampp/htdocs/Impulza/galerias/lpda/monterrey/360/monterrey_360.html",
+		"/C/xampp/htdocs/Impulza/galerias/chilanguitas/chilanguita_satelite.php",
+		"/C/xampp/htdocs/Impulza/galerias/chilanguitas/chilanguita_puebla.php",
+		"/C/xampp/htdocs/Impulza/galerias/chilanguitas/chilanguita_palmas.php",
+		"/C/xampp/htdocs/Impulza/galerias/chilanguitas/chilanguita_metepec.php",
+		"/C/xampp/htdocs/Impulza/galerias/chilanguitas/chilanguita_mundoE.php",
+		"/C/xampp/htdocs/Impulza/galerias/chilanguitas/chilanguita_masarik.php",
+		"/C/xampp/htdocs/Impulza/galerias/chilanguitas/chilanguita_loreto.php",
+		"/C/xampp/htdocs/Impulza/galerias/chilanguitas/chilanguita_lindavista.php",
+		"/C/xampp/htdocs/Impulza/galerias/chilanguitas/chilanguita_lasTorres.php",
+		"/C/xampp/htdocs/Impulza/galerias/chilanguitas/chilanguita_izcalli.php",
+		"/C/xampp/htdocs/Impulza/galerias/chilanguitas/chilanguita_coapa.php",
+		"/C/xampp/htdocs/Impulza/galerias/chilanguitas/chilanguita_angelopolis.php",
+		"/C/xampp/htdocs/Impulza/galerias/chilanguitas/chilanguita_centro.php",
+		"/C/xampp/htdocs/Impulza/galerias/chilanguitas/angelopolis/360/angelopolis_360.html",
+		"/C/xampp/htdocs/Impulza/js/functions_canti.js",
+		"/C/xampp/htdocs/Impulza/galerias/chilanguitas/coapa/coapa_360.html",
+		"/C/xampp/htdocs/Impulza/galerias/chilanguitas/izcalli/360/izcalli_360.html",
+		"/C/xampp/htdocs/Impulza/galerias/chilanguitas/acapulco/360/acapulco_360.html",
+		"/C/xampp/htdocs/Impulza/img/Cantinitas_Chilanguitas/Chilanguitas/izcalli/galeria/la_chilanguita_izcalli_restaurant_folklore_mexicano_artesanias_divertido_diversion_mexico_distrito_federal_1.jpg",
+		"/C/xampp/htdocs/Impulza/galerias/bzz/guadalajara/360/gdl_360.html",
+		"/C/xampp/htdocs/Impulza/galerias/bzz/puebla/360/puebla_360.html",
+		"/C/xampp/htdocs/Impulza/galerias/chilanguitas/cantinita_satelite.php",
+		"/C/xampp/htdocs/Impulza/js/functions_bzz.js",
+		"/C/xampp/htdocs/Impulza/galerias/bzz/pueBzz.php",
+		"/C/xampp/htdocs/Impulza/galerias/bzz/mtyBzz.php",
+		"/C/xampp/htdocs/Impulza/galerias/bzz/gdlBzz.php",
+		"/C/xampp/htdocs/Impulza/galerias/bzz/monterrey/360/mty_360.html",
+		"/C/xampp/htdocs/Impulza/galerias/bzz/leonBzz.php",
+		"/C/xampp/htdocs/Impulza/galerias/bzz/leon/360/leon_360.html",
+		"/C/xampp/htdocs/Impulza/galerias/bzz/iroBzz.php",
+		"/C/xampp/htdocs/Impulza/css/tableta.css",
+		"/C/xampp/htdocs/json/claseJSON/mylist.json",
+		"/C/xampp/htdocs/json/claseJSON/mi_lista_json.php",
+		"/C/xampp/htdocs/json/claseJSON/mylist",
+		"/C/xampp/htdocs/Impulza/js/functions_prive.js",
+		"/C/xampp/htdocs/Impulza/js/functions_santi.js",
+		"/C/Users/IMPULZA 03/Desktop/ejercicios_css.html",
+		"/C/Users/IMPULZA 03/Desktop/estilo.css",
+		"/C/Users/IMPULZA 03/Documents/IMPULZA/WEB/insumos/plugins/colorbox/colorbox-master/example1/index.html",
+		"/C/xampp/htdocs/Impulza/galerias/bzz/qroBzz",
+		"/C/Users/IMPULZA 03/Desktop/ejercicios_css",
+		"/C/xampp/htdocs/Impulza/galerias/bzz/polancoBzz.php",
+		"/C/xampp/htdocs/Impulza/galerias/bzz/gtoBzz.php",
+		"/C/xampp/htdocs/Impulza/galerias/bzz/tuxBzz.php",
+		"/C/xampp/htdocs/Impulza/galerias/bzz/chiBzz.php",
+		"/C/xampp/htdocs/Impulza/galerias/bzz/arcosBzz.php"
+	],
+	"find":
+	{
+		"height": 97.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"0",
+			"reservaPadre",
+			".seccionGaleria ",
+			"socialesNavega",
+			"contenedorSubMenu",
+			"socialesNavega",
+			".ui-panel-animate.ui-panel-content-fixed-toolbar-position-left.ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-reveal, .ui-panel-animate.ui-panel-content-fixed-toolbar-position-left.ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-push, .ui-panel-animate.ui-panel-content-wrap-position-left.ui-panel-content-wrap-open.ui-panel-content-wrap-display-reveal, .ui-panel-animate.ui-panel-content-wrap-position-left.ui-panel-content-wrap-open.ui-panel-content-wrap-display-push ",
+			"btn",
+			"textarea.ui-input-text",
+			"f",
+			"transition",
+			"slideRight",
+			"menu-panel",
+			".menu-panel",
+			"menu-panel",
+			".descripcionConcepLaPuerta p:first-child ",
+			"div.descripcionVision p",
+			".seccionGaleria",
+			"line-height:",
+			"div.descripcionBzzGd p",
+			"div.descripcionBzzGd p\n",
+			"div.descripcionBzzGd p \n",
+			"div.descripcionVision p",
+			"div.descripcionBzzGd p",
+			".seccionMapa",
+			".seccionMapa ",
+			"seccionMapa ",
+			"110",
+			".seccionVision",
+			"seccionMapa",
+			".mapaPresencia",
+			"mapaPresencia\n",
+			";\n",
+			"article",
+			"width",
+			"block",
+			";}\n",
+			"margin",
+			"border",
+			"#contenedor1",
+			".contenedorUnidades ul li",
+			"#contenedor4der",
+			".descripcionConcepSet p",
+			"descripcionCantiGdVerde",
+			".descripcionConcepSet p",
+			".descripcionConcepLaPuerta p",
+			".descripcionCantiGdVerde p",
+			".descripcionConcepCanti p",
+			"div.descripcionConcepBZZ p",
+			".misionVision h1",
+			".cenefaCantinitaRosa p",
+			"cenefaCantinitaRosa",
+			"div.cenefaVision",
+			"cenefaCantinitaRosa",
+			"div.descripcionBzzGd p",
+			".descripcionSetGd ",
+			".descripcionSantissimaGd ",
+			"div.descripcionVision p",
+			"font-size:24px;",
+			"presencia",
+			".presencia",
+			"div.cenefaVision",
+			"div.descripcionConcepBZZ p",
+			"div.descripcionVision p",
+			".descripcionBzzGd, div.descripcionConcepBZZ p",
+			".descripcionSantissimaGd span",
+			".conceptoSantissima h1",
+			".conceptoSet h1",
+			".conceptoLaPuertaNaran h1",
+			"conceptoCantinitaRosa",
+			"div.cenefaVision ",
+			"cenefaVision ",
+			"div.cenefaCantinitaRosa p",
+			".descripcionConcepLaPuerta p",
+			"div.descripcionConcepCanti p",
+			"descripcionConcepCanti",
+			".descripcionConcepCanti p",
+			"div.descripcionBzzGd p ",
+			".margenConcepBzz",
+			"descripcionPrive",
+			"div.descripcionConcepBZZ p",
+			"6px 0px 2px 5px",
+			".descripcionConcepBZZ",
+			".descripcionSantissimaGd",
+			"div.cenefaVision",
+			"div.descripcionBzzGd p",
+			".descripcionLaPuertaGd",
+			"cenefaCantinitaRosa",
+			"conceptoCantinitaNaranja",
+			"div.descripcionConcepCanti p",
+			"descripcionBZZ",
+			"descripcionConcepBZZ",
+			"misionVision",
+			".descripcionCantiGdRosa p",
+			".descripcionLaPuertaGd",
+			"conceptoLaPuertaNaran",
+			"seccionVision",
+			"misionVision",
+			".margenConcepBzz",
+			"descripcionBzzGd",
+			"descripcionConcepBZZ",
+			".contenedorAjax",
+			"#contenedor4der",
+			"soy_un_pato",
+			"seccionVision",
+			"descripcionCantiGdVerde",
+			"img/barezzito/leon/galeria/barezzito_leon_grupo_impulza_diversión_leon_guanajuato_",
+			"border",
+			"border:1px solid red;",
+			"border",
+			"guadalupe",
+			"img/Cantinitas_Chilanguitas/Chilanguitas/guadalupe/galeria/la_cantinita_guadalupe_monterrey_folklore_mexicano_restaurant_",
+			"guadalupe",
+			"img/Cantinitas_Chilanguitas/Chilanguitas/guadalupe",
+			"img/Cantinitas_Chilanguitas/Chilanguitas/guadalupe/galeria/la_cantinita_guadalupe_monterrey_folklore_mexicano_restaurant_",
+			"galerias/bzz/",
+			"img/barezzito/puebla/galeria/barezzito_puebla_sushi_bar_musica_lugares_para_salir_divertirse_en_puebla_grupo_impulza_",
+			"img/barezzito/monterrey/galeria/barezzito_monterrey_sushi_bar_muscia_lugares_para_salir_divertirse_en_monterrey_grupo_impulza_",
+			"img/barezzito/galeria/barezzito_monterrey_sushi_bar_muscia_lugares_para_salir_divertirse_en_monterrey_grupo_impulza_",
+			"img/barezzito/guadalajara/galeria/barezzito_guadalajara_sushi_bar_musica_grupo_impulza_jalisco_sitios_lugares_para_salir_divertirse_",
+			"img/barezzito/leon/galeria/barezzito_leon_grupo_impulza_diversión_leon_guanajuato_",
+			"descripcionBzzGd",
+			"descripcionBZZ",
+			"padding:0px;",
+			".imagenMapaPresencia{",
+			".mapaPresencia{",
+			"imagenHistoria",
+			"descripcionVision"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"img/LPDA/POLANCO/GALERIA/la_puerta_de_alcala_df_polanco_lugares_para_salir_divertirse_ciudad_de_mexico_retro_antro_video_bar_cafe_grupo_impulza_",
+			"",
+			"angelopolis",
+			"centro",
+			"img/Cantinitas_Chilanguitas/Chilanguitas/coapa/galeria/la_chilanguita_coapa_restaurant_folklore_mexicano_artesanias_divertido_diversion_mexico_distrito_federal",
+			"lindavista",
+			"img/Cantinitas_Chilanguitas/Chilanguitas/acapulco",
+			"img/Cantinitas_Chilanguitas/Chilanguitas/izcalli/galeria/la_chilanguita_izcalli_restaurant_folklore_mexicano_artesanias_divertido_diversion_mexico_distrito_federal_",
+			"galerias/cantinitas/",
+			"img/Cantinitas_Chilanguitas/Cantinitas/guadalupe/galeria/la_cantinita_guadalupe_monterrey_folklore_mexicano_restaurant_",
+			"img/barezzito/puebla/galeria/barezzito_puebla_sushi_bar_musica_lugares_para_salir_divertirse_en_puebla_grupo_impulza_",
+			"img/barezzito/monterrey/galeria/barezzito_monterrey_sushi_bar_muscia_lugares_para_salir_divertirse_en_monterrey_grupo_impulza_",
+			"img/barezzito/monterrey/galeria/barezzito_monterrey_sushi_bar_muscia_lugares_para_salir_divertirse_en_monterrey_grupo_impulza_\n\nimg/barezzito/guadalajara/galeria/barezzito_guadalajara_sushi_bar_musica_grupo_impulza_jalisco_sitios_lugares_para_salir_divertirse_",
+			"barezzito_monterrey_sushi_bar_muscia_lugares_para_salir_divertirse_en_monterrey_grupo_impulza_\n\nimg/barezzito/guadalajara/galeria/barezzito_guadalajara_sushi_bar_musica_grupo_impulza_jalisco_sitios_lugares_para_salir_divertirse_",
+			"\n\n\nimg/barezzito/guadalajara/galeria/barezzito_guadalajara_sushi_bar_musica_grupo_impulza_jalisco_sitios_lugares_para_salir_divertirse_",
+			"padding:0;"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 23,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23,
+								23
+							]
+						],
+						"settings":
+						{
+							"auto_name": "video 2 dvds",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 38.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 84.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/xampp/htdocs/Impulza/santissima.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 137.0,
+	"status_bar_visible": true
+}
