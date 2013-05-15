@@ -1,5 +1,6 @@
 body{
 	font-family: 'Roboto', sans-serif;
+	line-height: normal;
 }
 .color{
 	border: 1px solid red;
@@ -13,10 +14,50 @@ body{
 }
 
 .backgroundNaranja{
+	-moz-box-shadow: inset 0px 5px 5px #ae3232;
+	-webkit-box-shadow: inset 0px 5px 5px #ae3232;
+	box-shadow: inset 0px 5px 5px #ae3232;
 	background-color: #ee3232;
 }
 
+.fondoCrema{
+	background-color: #e8e7e7;
+}
 
+.sombraCremaAdentro{
+	-moz-box-shadow: inset 0px 5px 5px #777777;
+	-webkit-box-shadow: inset 0px 5px 5px #777777;
+	box-shadow: inset 0px 5px 5px #777777;
+}
+.sombraCremaAfuera{
+	-moz-box-shadow:  0px 5px 5px #b2b2b2;
+	-webkit-box-shadow:  0px 5px 5px #b2b2b2;
+	box-shadow:  0px 5px 5px #b2b2b2;
+}
+
+.sombraGrisAdentro{
+	-moz-box-shadow: inset 0px 5px 5px #323135;
+	-webkit-box-shadow: inset 0px 5px 5px #323135;
+	box-shadow: inset 0px 5px 5px #323135;
+}
+.backgroundGris{
+	background-color: #49484e;
+}
+
+.somoElite{
+	font-size: 2em;
+	color: #e8e7e7;
+	padding: 0 5%;
+}
+
+.seccionActiva{
+	background-color: #ee3232;
+	color: #fff;
+}
+
+span{
+	font-weight: bold;
+}
 .fondoScroll{
 	/* IE10 Consumer Preview */ 
 background-image: -ms-linear-gradient(right, #969696 0%, #030303 100%);
@@ -56,3 +97,40 @@ background-image: linear-gradient(to left, #969696 0%, #030303 100%);
 	margin:0.5em 0;
 }
 
+.mapaGoogle iframe{
+	width: 100%;
+	height: 450px;
+
+}
+
+.textoCenefa{
+	font-size: 1.5em;
+	color: #e8e7e7; 
+}
+
+
+    /* Large desktop */
+    @media (min-width: 1200px) { 
+		
+    }
+     
+    /* Portrait tablet to landscape and desktop */
+    @media (min-width: 768px) and (max-width: 979px) {
+		.somoElite{
+			font-size: 1.5em;
+		}
+    }
+     
+    /* Landscape phone to portrait tablet */
+    @media (max-width: 767px) {
+		.somoElite{
+			font-size: 1.5em;
+		}
+    }
+     
+    /* Landscape phones and down */
+    @media (max-width: 480px) {
+		.somoElite{
+			font-size: 1.3em;
+		}
+    }
