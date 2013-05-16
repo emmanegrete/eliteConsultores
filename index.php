@@ -11,6 +11,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
+	<!-- MENU -->
 	<div class="row-fluid">
 		<div class="span12">
 			<div class="color">
@@ -42,7 +43,10 @@
 				</nav>
 			</div>
 		</div>
-	</div>
+	</div><!-- MENU -->
+	
+
+	<!-- SOMOS ELITE -->
 	<div class="row-fluid">
 		<div class="span12">
 			<div class="span12">
@@ -57,7 +61,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div><!-- SOMOS ELITE -->
+
 	<div class="row-fluid">
 		<div class="span12">
 			<div data-stellar-background-ratio='0.5' class="color slide fondoScroll">
@@ -65,6 +70,8 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- SERVICIOS -->
 	<div class="row-fluid">
 		<div class="span12">
 			<div data-stellar-background-ratio='0.5' class="color">
@@ -80,39 +87,65 @@
 				<div class="row-fluid">
 					<div class="span12">
 						<div class="fondoCrema sombraCremaAdentro">
-							<div class="row-fluid">
-								<div class="span7 offset1">
-									<div class="row-fluid">
-										<div class="span6">
-											div.row-fluid>div.span12>div.
-											<div class="color padding10 margin10 sombraCremaAfuera seccionActiva">
-												SERVICIOS PROFESIONALES
+							<div class="ajaxCambio">
+								<div class="row-fluid">
+									<div class="span11 offset1">
+										<div class="row-fluid">
+											<div class="span6">
+												<div class="color padding10 margin10 sombraCremaAfuera seccionActiva">
+													<div class="row-fluid">
+														<div class="span8">
+															<div class="row-fluid">
+																<div class="span12">
+																	<div class="color">
+																		SERVICIOS PROFESIONALES
+																	</div>
+																</div>
+															</div>
+															<div class="row-fluid">
+																<div class="span12">
+																	<div class="color">
+																		>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="span4">
+															<div class="row-fluid">
+																<div class="span12">
+																	<div class="imagenSolucion color">
+																		<img src="" alt="">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>	
 											</div>
-											<div class="imagenSolucion">
-												<img src="" alt="">
+											<div class="span6">
+												<div class="color padding10 margin10 sombraCremaAfuera">
+													SERVICIOS AL SECTOR PRIVADO
+												</div>
 											</div>
 										</div>
-										<div class="span6">
-											<div class="color padding10 margin10 sombraCremaAfuera">
-												SERVICIOS AL SECTOR PRIVADO
+										<div class="row-fluid">
+											<div class="span6">
+												<div class="color padding10 margin10 sombraCremaAfuera">
+													SERVICIOS AL SECTOR PÚBLICO
+												</div>
+											</div>
+											<div class="span6">
+												<div class="color padding10 margin10 sombraCremaAfuera">
+													NOSOTROS
+												</div>
 											</div>
 										</div>
 									</div>
-									<div class="row-fluid">
-										<div class="span6">
-											<div class="color padding10 margin10 sombraCremaAfuera">
-												SERVICIOS AL SECTOR PÚBLICO
-											</div>
+									<!--
+										<div class="span4">
+											
 										</div>
-										<div class="span6">
-											<div class="color padding10 margin10 sombraCremaAfuera">
-												NOSOTROS
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="span4">
-									
+									-->
 								</div>
 							</div>
 						</div>
@@ -120,7 +153,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div><!-- SERVICIOS -->
+
 	<div class="row-fluid">
 		<div class="span12">
 			<div data-stellar-background-ratio='0.5' class="color slide fondoScroll">
@@ -128,6 +162,8 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- LOCALIZACION / MAPA -->
 
 	<div class="row-fluid">
 		<div class="span12">
@@ -150,7 +186,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div><!-- LOCALIZACION / MAPA -->
+
 	<div class="row-fluid">
 		<div class="span12">
 			<div data-stellar-background-ratio='0.5' class="color slide fondoScroll">
@@ -158,6 +195,8 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- CONTACTO -->
 	<div class="row-fluid">
 		<div class="span12">
 			<div data-stellar-background-ratio='0.5' class="color">
@@ -268,7 +307,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div><!-- CONTACTO -->
+
 	<div class="row-fluid">
 		<div class="span12">
 			<div data-stellar-background-ratio='0.5' class="color slide fondoScroll">
@@ -276,6 +316,8 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- FOOTER -->
 	<div class="row-fluid">
 		<div class="span12">
 			<div data-stellar-background-ratio='0.5' class="color">
