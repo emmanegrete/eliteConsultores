@@ -79,7 +79,7 @@
 					<div class="span12">
 						<div class="backgroundNaranja alCien">
 							<div class="padding20">
-								<p class="textoCenefa">SERVICIOS AL <br>PROFESIONALES</p>
+								<p class="textoCenefa tituloServicio">SERVICIOS PROFESIONALES</p>
 							</div>
 						</div>
 					</div>
@@ -89,10 +89,10 @@
 						<div class="fondoCrema sombraCremaAdentro">
 							<div class="ajaxCambio">
 								<div class="row-fluid">
-									<div class="span11 offset1">
+									<div class="span10 offset1">
 										<div class="row-fluid">
 											<div class="span6">
-												<div class="color padding10 margin10 sombraCremaAfuera seccionActiva">
+												<div id="servProfesionales" class="color servicioElite padding10 margin10 sombraCremaAfuera seccionActiva">
 													<div class="row-fluid">
 														<div class="span8">
 															<div class="row-fluid">
@@ -123,20 +123,98 @@
 												</div>	
 											</div>
 											<div class="span6">
-												<div class="color padding10 margin10 sombraCremaAfuera">
-													SERVICIOS AL SECTOR PRIVADO
+												<div id="servSectorPrivado" class="color servicioElite padding10 margin10 sombraCremaAfuera">
+													<div class="row-fluid">
+														<div class="span8">
+															<div class="row-fluid">
+																<div class="span12">
+																	<div class="color">
+																		SERVICIOS AL SECTOR PRIVADO
+																	</div>
+																</div>
+															</div>
+															<div class="row-fluid">
+																<div class="span12">
+																	<div class="color">
+																		>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="span4">
+															<div class="row-fluid">
+																<div class="span12">
+																	<div class="imagenSolucion color">
+																		<img src="" alt="">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
 										<div class="row-fluid">
 											<div class="span6">
-												<div class="color padding10 margin10 sombraCremaAfuera">
-													SERVICIOS AL SECTOR PÚBLICO
+												<div id="servSectorPublico" class="color servicioElite padding10 margin10 sombraCremaAfuera">
+													<div class="row-fluid">
+														<div class="span8">
+															<div class="row-fluid">
+																<div class="span12">
+																	<div class="color">
+																		SERVICIOS AL SECTOR PÚBLICO
+																	</div>
+																</div>
+															</div>
+															<div class="row-fluid">
+																<div class="span12">
+																	<div class="color">
+																		>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="span4">
+															<div class="row-fluid">
+																<div class="span12">
+																	<div class="imagenSolucion color">
+																		<img src="" alt="">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
 												</div>
 											</div>
 											<div class="span6">
-												<div class="color padding10 margin10 sombraCremaAfuera">
-													NOSOTROS
+												<div id="nosotros" class="color servicioElite padding10 margin10 sombraCremaAfuera">
+													<div class="row-fluid">
+														<div class="span8">
+															<div class="row-fluid">
+																<div class="span12">
+																	<div class="color">
+																		NOSOTROS
+																	</div>
+																</div>
+															</div>
+															<div class="row-fluid">
+																<div class="span12">
+																	<div class="color">
+																		>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="span4">
+															<div class="row-fluid">
+																<div class="span12">
+																	<div class="imagenSolucion color">
+																		<img src="" alt="">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -214,40 +292,102 @@
 						<div class="fondoCrema sombraCremaAdentro">
 							<div class="row-fluid">
 								<div class="span6">
+
 									<div class="row-fluid">
 										<div class="span11 offset1">
-											<div class="color">
-												<div class="titulo">Nombre</div>
-												<input type="text" name="nombreEnvio" class="nombreMail">
+											<div class="row-fluid">
+												<div class="span3">
+													<div class="color">
+														<div class="titulo">Nombre</div>
+													</div>
+
+												</div>
+												<div class="span9">
+													<div class="color fondoInput">
+														<input type="text" name="nombreEnvio" class="nombreMail">
+													</div>
+												</div>
 											</div>
-											<div class="errorNombre"></div>
+											<div class="row-fluid">
+												<div class="span12">
+													<div class="errorNombre color">
+														Error
+													</div>		
+												</div>
+											</div>
+										</div>
+									</div>
+										
+									<div class="row-fluid">
+										<div class="span11 offset1">
+											<div class="row-fluid">
+												<div class="span3">
+													<div class="color">
+														<div class="titulo">Email</div>
+													</div>
+
+												</div>
+												<div class="span9">
+													<div class="color fondoInput">
+														<input type="text" name="emailEnvio" class="emailMail">
+													</div>
+												</div>
+											</div>
+											<div class="row-fluid">
+												<div class="span12">
+													<div class="errorEmail color">
+														Error Mail
+													</div>		
+												</div>
+											</div>
 										</div>
 									</div>
 									<div class="row-fluid">
 										<div class="span11 offset1">
-											<div class="color">
-												<div class="titulo">E-Mail</div>
-												<input type="email" name="emailEnvio" class="emailMail">
+											<div class="row-fluid">
+												<div class="span3">
+													<div class="color">
+														<div class="titulo">Asunto</div>
+													</div>
+
+												</div>
+												<div class="span9">
+													<div class="color fondoInput">
+														<input type="text" name="asuntoEnvio" class="asuntoMail">
+													</div>
+												</div>
 											</div>
-											<div class="errorEmail"></div>
+											<div class="row-fluid">
+												<div class="span12">
+													<div class="errorAsunto color">
+														Error Asunto
+													</div>		
+												</div>
+											</div>
 										</div>
 									</div>
 									<div class="row-fluid">
 										<div class="span11 offset1">
-											<div class="color">
-												<div class="titulo">Asunto</div>
-												<input type="email" name="asuntoEnvio" class="emailMail">
+											<div class="row-fluid">
+												<div class="span3">
+													<div class="color">
+														<div class="titulo">Mensaje</div>
+													</div>
+
+												</div>
+												<div class="span9">
+													<div class="color fondoInput">
+														<input type="text" name="mensajeEnvio" class="mensajeMail">
+													</div>
+												</div>
 											</div>
-											<div class="errorAsunto"></div>
-										</div>
-									</div>
-									<div class="row-fluid">
-										<div class="span11 offset1">
-											<div class="color">
-												<div class="titulo">Mensaje</div>
-												<input type="text" name="mensajeEnvio" class="emailMail">
+											<div class="row-fluid">
+												<div class="span12">
+													<div class="errorMensaje color">
+														Error Mensaje
+													</div>		
+												</div>
 											</div>
-											<div class="errorMensaje"></div>
 										</div>
 									</div>
 									<div class="row-fluid">
@@ -258,7 +398,7 @@
 														<p>Todos los campos son obligatorios</p>
 													</div>
 													<div class="span6">
-														<div class="botonEnvio">
+														<div class="botonEnvio seccionActiva">
 															Enviar
 														</div>
 													</div>
@@ -323,7 +463,7 @@
 			<div data-stellar-background-ratio='0.5' class="color">
 				<div class="row-fluid">
 					<div class="span12">
-						<div class="backgroundGris alCien sombraGrisAdentro">
+						<div class="backgroundGris alCien sombraGrisAdentro letraBlanca">
 							<div class="padding20">
 								<div class="row-fluid">
 									<div class="span4">
@@ -414,6 +554,7 @@
 	</div>
 	<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script type="text/javascript" src="js/modernizr.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
