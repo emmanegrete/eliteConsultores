@@ -30,12 +30,12 @@
 							</div>
 							<div class="nav-collapse collapse">
 								<ul class="nav">
-									<li><a href="">uno</a></li>
-									<li><a href="">dos</a></li>
-									<li><a href="">tres</a></li>
-									<li><a href="">cuatro</a></li>
-									<li><a href="">cinco</a></li>
-									<li><a href="">seis</a></li>
+									<li><a href="">SERVICIOS <br> PROFESIONALES </a></li>
+									<li><a href="">SERVICIOS AL <br> SECTOR PRIVADO </a></li>
+									<li><a href="">SERVICIOS AL <br> SECTOR PÚBLICO</a></li>
+									<li><a href="">NOSOTROS</a></li>
+									<li><a href="">LOCALÍZANOS</a></li>
+									<li><a href="">CONTÁCTANOS</a></li>
 								</ul>
 							</div>
 						</div>

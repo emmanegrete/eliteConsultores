@@ -14,6 +14,30 @@ body{
 	width: 100%;
 }
 
+.navbar-inner{
+background: #333;
+border: none;
+border-radius: 0px;
+}
+
+.navbar .nav>li>a{
+	color: #999;
+	text-shadow: none;
+	transition: color 0.5s;
+}
+
+.navbar .nav>li>a:hover{
+	color: #DB3F27;
+}
+
+.navbar .nav>li{
+	padding: 10px 0 20px 0;
+}
+
+.navbar{
+	margin-bottom: 0;
+}
+
 .backgroundNaranja{
 	-moz-box-shadow: inset 0px 5px 5px #ae3232;
 	-webkit-box-shadow: inset 0px 5px 5px #ae3232;
