@@ -26,7 +26,9 @@ $(document).ready(function(){
 			var idServicio = $(this).attr("id");
 			switch(idServicio){
 					case "servProfesionales":
-						$(.ajaxCambio).load();
+						$(".ajaxCambio").load("cargaAjax/servicio_Profesionales.html", function() {
+alert('Load was performed.');
+});
 					break;
 					case "servSectorPrivado":
 						$(".tituloServicio").text("SERVICIOS AL SECTOR PRIVADO");
