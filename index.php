@@ -78,8 +78,22 @@
 				<div class="row-fluid">
 					<div class="span12">
 						<div class="backgroundNaranja alCien">
-							<div class="padding20">
-								<p class="textoCenefa tituloServicio">SERVICIOS PROFESIONALES</p>
+							<div class="row-fluid">
+								<div class="span1">
+									<div class="padding20">
+										<p class="textoCenefa ">INICIO</p>
+									</div>
+								</div>
+								<div class="span3">
+									<div class="padding20">
+										<p class="textoCenefa tituloServicio">SERVICIOS PROFESIONALES</p>
+									</div>
+								</div>
+								<div class="span5">
+									<div class="padding20">
+										<p class="textoCenefa servicioActual"></p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
