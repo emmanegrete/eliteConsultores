@@ -1,0 +1,182 @@
+								<div class="row-fluid">
+									<div class="span7 offset1">
+										<!-- /Planeación. Estudios de pre-inversión -->
+										<div class="row-fluid">
+											<div class="span6">
+												<div id="antecedentes" class="color nosotros padding10 margin10 sombraCremaAfuera seccionActiva">
+													<div class="row-fluid">
+														<div class="span12">
+															<div class="row-fluid">
+																<div class="span12">
+																	<div class="color">
+																		Antecedentes
+																	</div>
+																</div>
+															</div>
+															<div class="row-fluid">
+																<div class="span12">
+																	<div class="color">
+																		>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>	
+											</div>
+											<div class="span6">
+												<div id="misionVision" class="color nosotros padding10 margin10 sombraCremaAfuera">
+													<div class="row-fluid">
+														<div class="span12">
+															<div class="row-fluid">
+																<div class="span12">
+																	<div class="color">
+																		Misión, Visión
+																	</div>
+																</div>
+															</div>
+															<div class="row-fluid">
+																<div class="span12">
+																	<div class="color">
+																		>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div><!-- /Planeación. Estudios de pre-inversión -->
+										
+										<!-- /Gestión Financiera y administrativa. Presupuesto -->
+										<div class="row-fluid">
+											<div class="span6">
+												<div id="princiValAct" class="color nosotros padding10 margin10 sombraCremaAfuera">
+													<div class="row-fluid">
+														<div class="span12">
+															<div class="row-fluid">
+																<div class="span12">
+																	<div class="color">
+																		Principios, Valores y Actitudes
+																	</div>
+																</div>
+															</div>
+															<div class="row-fluid">
+																<div class="span12">
+																	<div class="color">
+																		>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>	
+											</div>
+											<div class="span6">
+												<div id="estrucCorp" class="color nosotros padding10 margin10 sombraCremaAfuera">
+													<div class="row-fluid">
+														<div class="span12">
+															<div class="row-fluid">
+																<div class="span12">
+																	<div class="color">
+																		Estructura Corporativa de Servicios
+																	</div>
+																</div>
+															</div>
+															<div class="row-fluid">
+																<div class="span12">
+																	<div class="color">
+																		>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div><!-- /Gestión Financiera y administrativa. Presupuesto -->
+										
+									</div>
+									<div class="span4">
+										<div class="imagenLateralServ color">
+											
+										</div>	
+									</div>
+								</div>
+<script type="text/javascript">
+$(function(){
+	/*-------- Servicios al sector publico --------*/
+	
+	
+	$(".nosotros").on({
+		mouseenter:function(){
+			if($(this).hasClass("seccionActiva") != true) {
+				var servicioProf =$(".nosotros");
+				servicioProf.removeClass("seccionActiva",300);
+					$(this).addClass("seccionActiva",300);
+			}
+
+			
+			var idServicio = $(this).attr("id");
+
+				switch(idServicio){
+					case "antecedentes":
+						$(".servicioActual").text("Antecedentes.");
+					break;
+					case "misionVision":
+						$(".servicioActual").text("Misión, Visión.");
+					break;
+					case "princiValAct":
+					 	$(".servicioActual").text("Principios, Valores y Actitudes.");
+					break;
+					case "estrucCorp":
+						$(".servicioActual").text("Estructura Corporativa de Servicios.");
+					break;
+				}	
+
+		},click:function(){ 
+
+			$(".tituloServicio").on({
+				mouseenter:function(){
+					$(this).css({
+						"cursor":"pointer"
+					});
+				},click:function(){
+					$(".ajaxCambio").load("cargaAjax/nosotros.html", function(){
+													$(".tituloServicio").css({
+														"cursor":"text"
+													});
+													$(".servicioActual").text("");
+												});
+				}
+			});
+
+			var idServicio = $(this).attr("id");
+			switch(idServicio){
+					case "antecedentes":
+						$(".ajaxCambio").load("cargaAjax/nosotros/antecedentes.html", function() {
+							alert('Load was performed.');
+						});
+					break;
+					case "misionVision":
+						$(".ajaxCambio").load("cargaAjax/nosotros/mision-vision.html", function() {
+							alert('Load was performed.');
+						});
+					break;
+					case "princiValAct":
+					 	$(".ajaxCambio").load("cargaAjax/nosotros/principios-valores-y-actitudes.html", function() {
+							alert('Load was performed.');
+						});
+					break;
+					case "estrucCorp":
+						$(".ajaxCambio").load("cargaAjax/nosotros/estructura-corporativa-de-servicios.html", function() {
+							alert('Load was performed.');
+						});
+					break;
+				}
+		 }
+	});
+
+	/*-------- Servicios al sector publico --------*/
+});
+</script>

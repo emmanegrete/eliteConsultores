@@ -81,7 +81,7 @@
 							<div class="row-fluid">
 								<div class="span1">
 									<div class="padding20">
-										<p class="textoCenefa ">INICIO</p>
+										<p class="textoCenefa inicioServ">INICIO</p>
 									</div>
 								</div>
 								<div class="span3">

@@ -73,13 +73,13 @@
 												</div>	
 											</div>
 											<div class="span6">
-												<div id="Presupuesto" class="color servicioPublico padding10 margin10 sombraCremaAfuera">
+												<div id="contaPresupuesto" class="color servicioPublico padding10 margin10 sombraCremaAfuera">
 													<div class="row-fluid">
 														<div class="span12">
 															<div class="row-fluid">
 																<div class="span12">
 																	<div class="color">
-																		Presupuesto
+																		Contabilidad y Presupuesto
 																	</div>
 																</div>
 															</div>
@@ -175,4 +175,88 @@
 										</div>	
 									</div>
 								</div>
-<script type="text/javascript" src="js/principal.js"></script>
+<script type="text/javascript">
+$(function(){
+	/*-------- Servicios al sector publico --------*/
+	
+
+	$(".servicioPublico").on({
+		mouseenter:function(){
+			if($(this).hasClass("seccionActiva") != true) {
+				var servicioProf =$(".servicioPublico");
+				servicioProf.removeClass("seccionActiva",300);
+					$(this).addClass("seccionActiva",300);
+			}
+
+			
+			var idServicio = $(this).attr("id");
+
+				switch(idServicio){
+					case "planeacion":
+						$(".servicioActual").text("Planeación.");
+					break;
+					case "estudioPreInv":
+						$(".servicioActual").text("Estudios de pre-inversión.");
+					break;
+					case "gestionFinanAdmin":
+					 	$(".servicioActual").text("Gestión Financiera y administrativa.");
+					break;
+					case "contaPresupuesto":
+						$(".servicioActual").text("Presupuesto.");
+					break;
+					case "Auditoria":
+						$(".servicioActual").text("Auditoría.");
+					break;
+					case "tecInf":
+						$(".servicioActual").text("Tecnologías de la Información.");
+					break;
+					case "deudaPublica":
+						$(".servicioActual").text("Deuda Pública.");
+					break;
+				}	
+
+		},click:function(){ 
+			var idServicio = $(this).attr("id");
+			switch(idServicio){
+					case "planeacion":
+						$(".ajaxCambio").load("cargaAjax/servicios-al-sector-publico/planeacion.html", function() {
+alert('Load was performed.');
+});
+					break;
+					case "estudioPreInv":
+						$(".ajaxCambio").load("cargaAjax/servicios-al-sector-publico/estudios-de-pre-inversion.html", function() {
+alert('Load was performed.');
+});
+					break;
+					case "gestionFinanAdmin":
+					 	$(".ajaxCambio").load("cargaAjax/servicios-al-sector-publico/gestion-financiera-y-administrativa.html", function() {
+alert('Load was performed.');
+});
+					break;
+					case "contaPresupuesto":
+						$(".ajaxCambio").load("cargaAjax/servicios-al-sector-publico/contabilidad-y-presupuesto.html", function() {
+alert('Load was performed.');
+});
+					break;
+					case "Auditoria":
+						$(".ajaxCambio").load("cargaAjax/servicios-al-sector-publico/auditoria.html", function() {
+alert('Load was performed.');
+});
+					break;
+					case "tecInf":
+						$(".ajaxCambio").load("cargaAjax/servicios-al-sector-publico/tecnologias-de-la-informacion.html", function() {
+alert('Load was performed.');
+});
+					break;
+					case "deudaPublica":
+						$(".ajaxCambio").load("cargaAjax/servicios-al-sector-publico/deuda-publica.html", function() {
+alert('Load was performed.');
+});
+					break;
+				}
+		 }
+	});
+
+	/*-------- Servicios al sector publico --------*/
+});
+</script>
