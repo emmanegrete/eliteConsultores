@@ -40,6 +40,7 @@ $(document).ready(function(){
 				});		
 				$(".servicioActual").text("");
 				*/
+				
 				$(".ajaxCambio").fadeOut('slow').load("cargaAjax/inicioServ.html").fadeIn("slow");
 			});
 			var idServicio = $(this).attr("id");

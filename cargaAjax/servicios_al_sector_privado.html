@@ -193,11 +193,15 @@ $(function(){
 														"cursor":"pointer"
 													});
 												},click:function(){
-													$(".ajaxCambio").load("cargaAjax/servicio_Profesionales.html", function(){
-														$(".tituloServicio").css({
-															"cursor":"text"
+													$(".ajaxCambio").fadeOut("slow",function(){
+														$(".ajaxCambio").load("cargaAjax/servicios_al_sector_privado.html", function(){
+															$(".ajaxCambio").fadeIn("slow",function(){
+																$(".tituloServicio").css({
+																		"cursor":"text"
+																});
+																$(".servicioActual").text("");
+															});
 														});
-														$(".servicioActual").text("");
 													});
 												}
 											});	

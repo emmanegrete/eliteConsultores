@@ -135,21 +135,24 @@ $(function(){
 				}	
 
 		},click:function(){ 
-
 			$(".tituloServicio").on({
 				mouseenter:function(){
 					$(this).css({
 						"cursor":"pointer"
 					});
 				},click:function(){
-					$(".ajaxCambio").load("cargaAjax/nosotros.html", function(){
-													$(".tituloServicio").css({
-														"cursor":"text"
-													});
-													$(".servicioActual").text("");
-												});
+					$(".ajaxCambio").fadeOut("slow",function(){
+						$(".ajaxCambio").load("cargaAjax/nosotros.html", function(){
+							$(".ajaxCambio").fadeIn("slow",function(){
+								$(".tituloServicio").css({
+										"cursor":"text"
+								});
+								$(".servicioActual").text("");
+							});
+						});
+					});
 				}
-			});
+			});	
 
 			var idServicio = $(this).attr("id");
 			switch(idServicio){

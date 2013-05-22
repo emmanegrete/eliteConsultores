@@ -216,42 +216,62 @@ $(function(){
 				}	
 
 		},click:function(){ 
+
+			$(".tituloServicio").on({
+				mouseenter:function(){
+					$(this).css({
+						"cursor":"pointer"
+					});
+				},click:function(){
+					$(".ajaxCambio").fadeOut("slow",function(){
+						$(".ajaxCambio").load("cargaAjax/nosotros.html", function(){
+							$(".ajaxCambio").fadeIn("slow",function(){
+								$(".tituloServicio").css({
+										"cursor":"text"
+								});
+								$(".servicioActual").text("");
+							});
+						});
+					});
+				}
+			});
+
 			var idServicio = $(this).attr("id");
 			switch(idServicio){
 					case "planeacion":
 						$(".ajaxCambio").load("cargaAjax/servicios-al-sector-publico/planeacion.html", function() {
-alert('Load was performed.');
-});
+							alert('Load was performed.');
+						});
 					break;
 					case "estudioPreInv":
 						$(".ajaxCambio").load("cargaAjax/servicios-al-sector-publico/estudios-de-pre-inversion.html", function() {
-alert('Load was performed.');
-});
+							alert('Load was performed.');
+						});
 					break;
 					case "gestionFinanAdmin":
 					 	$(".ajaxCambio").load("cargaAjax/servicios-al-sector-publico/gestion-financiera-y-administrativa.html", function() {
-alert('Load was performed.');
-});
+							alert('Load was performed.');
+						});
 					break;
 					case "contaPresupuesto":
 						$(".ajaxCambio").load("cargaAjax/servicios-al-sector-publico/contabilidad-y-presupuesto.html", function() {
-alert('Load was performed.');
-});
+							alert('Load was performed.');
+						});
 					break;
 					case "Auditoria":
 						$(".ajaxCambio").load("cargaAjax/servicios-al-sector-publico/auditoria.html", function() {
-alert('Load was performed.');
-});
+							alert('Load was performed.');
+						});
 					break;
 					case "tecInf":
 						$(".ajaxCambio").load("cargaAjax/servicios-al-sector-publico/tecnologias-de-la-informacion.html", function() {
-alert('Load was performed.');
-});
+							alert('Load was performed.');
+						});
 					break;
 					case "deudaPublica":
 						$(".ajaxCambio").load("cargaAjax/servicios-al-sector-publico/deuda-publica.html", function() {
-alert('Load was performed.');
-});
+							alert('Load was performed.');
+						});
 					break;
 				}
 		 }
