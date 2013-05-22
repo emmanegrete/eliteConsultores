@@ -331,9 +331,9 @@ $(function(){
 													"cursor":"pointer"
 												});
 											},click:function(){
-												$(".ajaxCambio").fadeOut("slow",function(){
+												$(".ajaxCambio").fadeOut("fast",function(){
 													$(".ajaxCambio").load("cargaAjax/servicio_Profesionales.html", function(){
-														$(".ajaxCambio").fadeIn("slow",function(){
+														$(".ajaxCambio").fadeIn("fast",function(){
 															$(".tituloServicio").css({
 																"cursor":"text"
 															});
@@ -351,67 +351,67 @@ $(function(){
 
 /*-------- Servicios profesionales --------*/
 });
-								function cargaServicio(identificador){
-											var nombreServ;
-											var servAct = $(".servicioActual");
-											var cambioAjax = $(".ajaxCambio");
-											var direccion;
-											var direccProf="servicios-Profesionales/";
-											switch(identificador){
-												
-												case "AsesoriaFiscal":
-													direccion="asesoria-y-planeacion-fiscal.html";
-													nombreServ="Asesoría y Planeación Fiscal.";
-												break;
-												case "AsesoriaPlaneacionCorp":
-													direccion="asesoria-y-planeacion-corporativa.html";
-													nombreServ="Asesoría y Planeación Corporativa.";
-												break;
-												case "AsesoPlanPatrimo":
-													direccion="asesoria-y-planeacion-patrimonial.html";
-													nombreServ="Asesoría y Planeación Patrimonial.";
-												break;
-												case "AsesoriaNegocios":
-													direccion="asesoria-en-negocios.html";
-													nombreServ="Asesoría en negocios.";
-												break;
-												case "ServContFinan":
-													direccion="servicios-contables-financieros-fiscales.html";
-													nombreServ="Servicio Contable, Financiero, Fiscales.";
-												break;
-												case "AsesoPlaneaFinan":
-													direccion="asesoria-y-planeacion-financiera.html";
-													nombreServ="Asesoría y Planeación Financiera.";
-												break;
-												case "AsesoCtrlInt":
-													direccion="asesoria-en-control-interno.html";
-													nombreServ="Asesoría en Control Interno.";
-												break;
-												case "AudiFisFin":
-													direccion="auditoria-fiscal-y-financiera.html";
-													nombreServ="Auditoría Fiscal y Financiera.";
-												break;
-												case "ServFis":
-													direccion="servicios-fiscales.html";
-													nombreServ="Servicios Fiscales.";
-												break;
-												case "ServLegalesCorp":
-													direccion="servicios-legales-corporativos-y-patrimoniales.html";
-													nombreServ="Servicios legales, corporativos y patrimoniales.";
-												break;
-												case "outsourcing":
-													direccion="outsourcing.html";
-													nombreServ="Outsourcing.";
-												break;
-											}
+	function cargaServicio(identificador){
+		var nombreServ;
+		var servAct = $(".servicioActual");
+		var cambioAjax = $(".ajaxCambio");
+		var direccion;
+		var direccProf="servicios-Profesionales/";
+		switch(identificador){
+			
+			case "AsesoriaFiscal":
+				direccion="asesoria-y-planeacion-fiscal.html";
+				nombreServ="Asesoría y Planeación Fiscal.";
+			break;
+			case "AsesoriaPlaneacionCorp":
+				direccion="asesoria-y-planeacion-corporativa.html";
+				nombreServ="Asesoría y Planeación Corporativa.";
+			break;
+			case "AsesoPlanPatrimo":
+				direccion="asesoria-y-planeacion-patrimonial.html";
+				nombreServ="Asesoría y Planeación Patrimonial.";
+			break;
+			case "AsesoriaNegocios":
+				direccion="asesoria-en-negocios.html";
+				nombreServ="Asesoría en negocios.";
+			break;
+			case "ServContFinan":
+				direccion="servicios-contables-financieros-fiscales.html";
+				nombreServ="Servicio Contable, Financiero, Fiscales.";
+			break;
+			case "AsesoPlaneaFinan":
+				direccion="asesoria-y-planeacion-financiera.html";
+				nombreServ="Asesoría y Planeación Financiera.";
+			break;
+			case "AsesoCtrlInt":
+				direccion="asesoria-en-control-interno.html";
+				nombreServ="Asesoría en Control Interno.";
+			break;
+			case "AudiFisFin":
+				direccion="auditoria-fiscal-y-financiera.html";
+				nombreServ="Auditoría Fiscal y Financiera.";
+			break;
+			case "ServFis":
+				direccion="servicios-fiscales.html";
+				nombreServ="Servicios Fiscales.";
+			break;
+			case "ServLegalesCorp":
+				direccion="servicios-legales-corporativos-y-patrimoniales.html";
+				nombreServ="Servicios legales, corporativos y patrimoniales.";
+			break;
+			case "outsourcing":
+				direccion="outsourcing.html";
+				nombreServ="Outsourcing.";
+			break;
+		}
 
-											cambioAjax.fadeOut("slow",function(){
-													cambioAjax.load("cargaAjax/"+direccProf+direccion,function(){
-														cambioAjax.fadeIn("slow", function(){
-															servAct.text(nombreServ);
-														});
-													});
-											});
-										}
+		cambioAjax.fadeOut("fast",function(){
+				cambioAjax.load("cargaAjax/"+direccProf+direccion,function(){
+					cambioAjax.fadeIn("fast", function(){
+						servAct.text(nombreServ);
+					});
+				});
+		});
+	}
 
 </script>

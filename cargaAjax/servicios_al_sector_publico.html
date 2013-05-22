@@ -176,6 +176,52 @@
 									</div>
 								</div>
 <script type="text/javascript">
+function cargaServicio(identificador){
+											var nombreServ;
+											var servAct = $(".servicioActual");
+											var cambioAjax = $(".ajaxCambio");
+											var direccion;
+											var direccProf="servicios-al-sector-publico/";
+											switch(identificador){
+												
+												case "planeacion":
+													direccion="planeacion.html";
+													nombreServ="Planeacion";
+												break;
+												case "estudioPreInv":
+													direccion="estudios-de-pre-inversion.html";
+													nombreServ="Estudios de pre-inversión.";
+												break;
+												case "gestionFinanAdmin":
+													direccion="gestion-financiera-y-administrativa.html";
+													nombreServ="Gestión Financiera y administrativa.";
+												break;
+												case "contaPresupuesto":
+													direccion="consultoria-de-negocios.html";
+													nombreServ="Presupuesto.";
+												break;
+												case "Auditoria":
+													direccion="auditoria.html";
+													nombreServ="Auditoria.";
+												break;
+												case "tecInf":
+													direccion="tecnologias-de-la-informacion.html";
+													nombreServ="Tecnologías de la Información.";
+												break;
+												case "deudaPublica":
+													direccion="deuda-publica.html";
+													nombreServ="Deuda Pública.";
+												break;
+											}
+
+											cambioAjax.fadeOut("fast",function(){
+													cambioAjax.load("cargaAjax/"+direccProf+direccion,function(){
+														cambioAjax.fadeIn("fast", function(){
+															servAct.text(nombreServ);
+														});
+													});
+											});
+										}
 $(function(){
 	/*-------- Servicios al sector publico --------*/
 	
@@ -223,9 +269,9 @@ $(function(){
 						"cursor":"pointer"
 					});
 				},click:function(){
-					$(".ajaxCambio").fadeOut("slow",function(){
+					$(".ajaxCambio").fadeOut("fast",function(){
 						$(".ajaxCambio").load("cargaAjax/nosotros.html", function(){
-							$(".ajaxCambio").fadeIn("slow",function(){
+							$(".ajaxCambio").fadeIn("fast",function(){
 								$(".tituloServicio").css({
 										"cursor":"text"
 								});
@@ -237,43 +283,8 @@ $(function(){
 			});
 
 			var idServicio = $(this).attr("id");
-			switch(idServicio){
-					case "planeacion":
-						$(".ajaxCambio").load("cargaAjax/servicios-al-sector-publico/planeacion.html", function() {
-							alert('Load was performed.');
-						});
-					break;
-					case "estudioPreInv":
-						$(".ajaxCambio").load("cargaAjax/servicios-al-sector-publico/estudios-de-pre-inversion.html", function() {
-							alert('Load was performed.');
-						});
-					break;
-					case "gestionFinanAdmin":
-					 	$(".ajaxCambio").load("cargaAjax/servicios-al-sector-publico/gestion-financiera-y-administrativa.html", function() {
-							alert('Load was performed.');
-						});
-					break;
-					case "contaPresupuesto":
-						$(".ajaxCambio").load("cargaAjax/servicios-al-sector-publico/contabilidad-y-presupuesto.html", function() {
-							alert('Load was performed.');
-						});
-					break;
-					case "Auditoria":
-						$(".ajaxCambio").load("cargaAjax/servicios-al-sector-publico/auditoria.html", function() {
-							alert('Load was performed.');
-						});
-					break;
-					case "tecInf":
-						$(".ajaxCambio").load("cargaAjax/servicios-al-sector-publico/tecnologias-de-la-informacion.html", function() {
-							alert('Load was performed.');
-						});
-					break;
-					case "deudaPublica":
-						$(".ajaxCambio").load("cargaAjax/servicios-al-sector-publico/deuda-publica.html", function() {
-							alert('Load was performed.');
-						});
-					break;
-				}
+			cargaServicio(idServicio);
+
 		 }
 	});
 

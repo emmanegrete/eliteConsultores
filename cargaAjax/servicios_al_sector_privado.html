@@ -152,6 +152,48 @@
 									</div>
 								</div>
 <script type="text/javascript">
+										function cargaServicio(identificador){
+											var nombreServ;
+											var servAct = $(".servicioActual");
+											var cambioAjax = $(".ajaxCambio");
+											var direccion;
+											var direccProf="servicios-al-sector-privado/";
+											switch(identificador){
+												
+												case "auditoriaExterna":
+													direccion="auditoria-externa.html";
+													nombreServ="Auditoría Externa";
+												break;
+												case "adminRiesgos":
+													direccion="administracion-de-riesgos.html";
+													nombreServ="Administración de Riesgos.";
+												break;
+												case "diagOrganiza":
+													direccion="diagnostico-organizacional.html";
+													nombreServ="Diagnóstico Organizacional.";
+												break;
+												case "consulNego":
+													direccion="consultoria-de-negocios.html";
+													nombreServ="Consultoría de Negocios.";
+												break;
+												case "contraloExt":
+													direccion="contraloria-externa.html";
+													nombreServ="Contraloría Externa.";
+												break;
+												case "asesoDesaLabo":
+													direccion="asesoria-y-desarrollo-laboral.html";
+													nombreServ="Asesoría y Desarrollo Laboral.";
+												break;
+											}
+
+											cambioAjax.fadeOut("fast",function(){
+													cambioAjax.load("cargaAjax/"+direccProf+direccion,function(){
+														cambioAjax.fadeIn("fast", function(){
+															servAct.text(nombreServ);
+														});
+													});
+											});
+										}
 $(function(){
 							/*-------- Sector privado --------*/
 									$(".servicioPrivado").on({
@@ -193,9 +235,9 @@ $(function(){
 														"cursor":"pointer"
 													});
 												},click:function(){
-													$(".ajaxCambio").fadeOut("slow",function(){
+													$(".ajaxCambio").fadeOut("fast",function(){
 														$(".ajaxCambio").load("cargaAjax/servicios_al_sector_privado.html", function(){
-															$(".ajaxCambio").fadeIn("slow",function(){
+															$(".ajaxCambio").fadeIn("fast",function(){
 																$(".tituloServicio").css({
 																		"cursor":"text"
 																});
@@ -207,38 +249,7 @@ $(function(){
 											});	
 
 											var idServicio = $(this).attr("id");
-											switch(idServicio){
-													case "auditoriaExterna":
-														$(".ajaxCambio").load("cargaAjax/servicios-al-sector-privado/auditoria-externa.html", function() {
-															alert('Load was performed.');	
-														});
-													break;
-													case "adminRiesgos":
-														$(".ajaxCambio").load("cargaAjax/servicios-al-sector-privado/administracion-de-riesgos.html", function() {
-															alert('Load was performed.');
-														});
-													break;
-													case "diagOrganiza":
-													 	$(".ajaxCambio").load("cargaAjax/servicios-al-sector-privado/diagnostico-organizacional.html", function() {
-															alert('Load was performed.');
-														});
-													break;
-													case "consulNego":
-														$(".ajaxCambio").load("cargaAjax/servicios-al-sector-privado/consultoria-de-negocios.html", function() {
-															alert('Load was performed.');
-														});
-													break;
-													case "contraloExt":
-														$(".ajaxCambio").load("cargaAjax/sservicios-al-sector-privado/contraloria-externa.html", function() {
-															alert('Load was performed.');
-														});
-													break;
-													case "asesoDesaLabo":
-														$(".ajaxCambio").load("cargaAjax/servicios-al-sector-privado/asesoria-y-desarrollo-laboral.html", function() {
-															alert('Load was performed.');
-														});
-													break;
-												}
+											cargaServicio(idServicio);
 										 }
 									});
 

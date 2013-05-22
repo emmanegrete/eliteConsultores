@@ -141,9 +141,9 @@ $(function(){
 						"cursor":"pointer"
 					});
 				},click:function(){
-					$(".ajaxCambio").fadeOut("slow",function(){
+					$(".ajaxCambio").fadeOut("fast",function(){
 						$(".ajaxCambio").load("cargaAjax/nosotros.html", function(){
-							$(".ajaxCambio").fadeIn("slow",function(){
+							$(".ajaxCambio").fadeIn("fast",function(){
 								$(".tituloServicio").css({
 										"cursor":"text"
 								});
@@ -155,31 +155,44 @@ $(function(){
 			});	
 
 			var idServicio = $(this).attr("id");
-			switch(idServicio){
-					case "antecedentes":
-						$(".ajaxCambio").load("cargaAjax/nosotros/antecedentes.html", function() {
-							alert('Load was performed.');
-						});
-					break;
-					case "misionVision":
-						$(".ajaxCambio").load("cargaAjax/nosotros/mision-vision.html", function() {
-							alert('Load was performed.');
-						});
-					break;
-					case "princiValAct":
-					 	$(".ajaxCambio").load("cargaAjax/nosotros/principios-valores-y-actitudes.html", function() {
-							alert('Load was performed.');
-						});
-					break;
-					case "estrucCorp":
-						$(".ajaxCambio").load("cargaAjax/nosotros/estructura-corporativa-de-servicios.html", function() {
-							alert('Load was performed.');
-						});
-					break;
-				}
+			cargaServicio(idServicio);
 		 }
 	});
 
 	/*-------- Servicios al sector publico --------*/
 });
+								function cargaServicio(identificador){
+											var nombreServ;
+											var servAct = $(".servicioActual");
+											var cambioAjax = $(".ajaxCambio");
+											var direccion;
+											var direccProf="nosotros/";
+											switch(identificador){
+												
+												case "antecedentes":
+													direccion="antecedentes.html";
+													nombreServ="Antecedentes";
+												break;
+												case "misionVision":
+													direccion="mision-vision.html";
+													nombreServ="Misión, Visión.";
+												break;
+												case "princiValAct":
+													direccion="principios-valores-y-actitudes.html";
+													nombreServ="Principios, Valores y Actitudes.";
+												break;
+												case "estrucCorp":
+													direccion="estructura-corporativa-de-servicios.html";
+													nombreServ="Estructura Corporativa de Servicios.";
+												break;
+											}
+
+											cambioAjax.fadeOut("fast",function(){
+													cambioAjax.load("cargaAjax/"+direccProf+direccion,function(){
+														cambioAjax.fadeIn("fast", function(){
+															servAct.text(nombreServ);
+														});
+													});
+											});
+										}
 </script>
