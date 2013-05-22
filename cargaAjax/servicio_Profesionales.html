@@ -275,7 +275,6 @@
 								</div>
 <script type="text/javascript">
 $(function(){
-
 	/*-------- Servicios profesionales --------*/
 								$(".servProfesional").on({
 									mouseenter:function(){
@@ -332,11 +331,15 @@ $(function(){
 													"cursor":"pointer"
 												});
 											},click:function(){
-												$(".ajaxCambio").load("cargaAjax/servicio_Profesionales.html", function(){
-													$(".tituloServicio").css({
-														"cursor":"text"
+												$(".ajaxCambio").fadeOut("slow",function(){
+													$(".ajaxCambio").load("cargaAjax/servicio_Profesionales.html", function(){
+														$(".ajaxCambio").fadeIn("slow",function(){
+															$(".tituloServicio").css({
+																"cursor":"text"
+															});
+															$(".servicioActual").text("");
+														});
 													});
-													$(".servicioActual").text("");
 												});
 											}
 										});

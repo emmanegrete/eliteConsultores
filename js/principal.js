@@ -1,14 +1,8 @@
 $(document).ready(function(){
-	
+	Franquicia*2013
 	$(window).stellar();
-	$(".inicioServ").on("click",function(){
-		$(".ajaxCambio").fadeOut('slow',function(){
-			$(this).load("cargaAjax/inicioServ.html",function(){
-				$(this).fadeIn("slow");
-			});
-		});		
-		$(".servicioActual").text("");
-	});
+
+	
 	/*-------- Menu Inicio --------*/
 	$(".servicioElite").on({
 		mouseenter:function(event){
@@ -38,6 +32,14 @@ $(document).ready(function(){
 				}	
 
 		},click:function(){ 
+			$(".inicioServ").on("click",function(){
+				$(".ajaxCambio").fadeOut('slow',function(){
+					$(this).load("cargaAjax/inicioServ.html",function(){
+						$(this).fadeIn("slow");
+					});
+				});		
+				$(".servicioActual").text("");
+			});
 			var idServicio = $(this).attr("id");
 			switch(idServicio){
 
