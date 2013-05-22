@@ -1,14 +1,7 @@
 $(document).ready(function(){
 	
 	$(window).stellar();
-	$(".inicioServ").on("click",function(){
-		$(".ajaxCambio").fadeOut('slow',function(){
-			$(this).load("cargaAjax/inicioServ.html",function(){
-				$(this).fadeIn("slow");
-			});
-		});		
-		$(".servicioActual").text("");
-	});
+	
 	/*-------- Menu Inicio --------*/
 	$(".servicioElite").on({
 		mouseenter:function(event){
@@ -38,6 +31,17 @@ $(document).ready(function(){
 				}	
 
 		},click:function(){ 
+			$(".inicioServ").on("click",function(){
+				/*
+				$(".ajaxCambio").fadeOut('slow',function(){
+					$(this).load("cargaAjax/inicioServ.html",function(){
+						$(this).fadeIn("slow");
+					});
+				});		
+				$(".servicioActual").text("");
+				*/
+				$(".ajaxCambio").fadeOut('slow').load("cargaAjax/inicioServ.html").fadeIn("slow");
+			});
 			var idServicio = $(this).attr("id");
 			switch(idServicio){
 
