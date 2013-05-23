@@ -136,43 +136,9 @@
 									-->
 								</div>
 <script type="text/javascript">
-function cargaInicio(identificador){
-											var nombreServ;
-											var servAct = $(".tituloServicio");
-											var cambioAjax = $(".ajaxCambio");
-											var direccion;
-											switch(identificador){
-												
-												case "servProfesionales":
-													direccion="servicio_Profesionales.html";
-													nombreServ="SERVICIOS PROFESIONALES.";
-												break;
-												case "servSectorPrivado":
-													direccion="servicios_al_sector_privado.html";
-													nombreServ="SERVICIOS AL SECTOR PRIVADO.";
-												break;
-												case "servSectorPublico":
-													direccion="servicios_al_sector_publico.html";
-													nombreServ="SERVICIOS AL SECTOR PÚBLICO.";
-												break;
-												case "nosotros":
-													direccion="nosotros.html";
-													nombreServ="NOSOTROS.";
-												break;
-											}
-
-											cambioAjax.fadeOut("fast",function(){
-													cambioAjax.load("cargaAjax/"+direccion,function(){
-														cambioAjax.fadeIn("fast", function(){
-															servAct.text(nombreServ);
-														});
-													});
-											});
-										}
-
-	$(function(){
+$(function(){
 		/*-------- Menu Inicio --------*/
-	$(".servicioElite").on({
+	$(".servicioElite").one({
 		mouseenter:function(event){
 			event.preventDefault();
 			if($(this).hasClass("seccionActiva") != true) {
@@ -204,7 +170,44 @@ function cargaInicio(identificador){
 			cargaInicio(idServicio);
 		 }
 	});
+
+	function cargaInicio(identificador){
+		var nombreServ;
+		var servAct = $(".tituloServicio");
+		var cambioAjax = $(".ajaxCambio");
+		var direccion;
+		switch(identificador){
+			
+			case "servProfesionales":
+				direccion="servicio_Profesionales.html";
+				nombreServ="SERVICIOS PROFESIONALES.";
+			break;
+			case "servSectorPrivado":
+				direccion="servicios_al_sector_privado.html";
+				nombreServ="SERVICIOS AL SECTOR PRIVADO.";
+			break;
+			case "servSectorPublico":
+				direccion="servicios_al_sector_publico.html";
+				nombreServ="SERVICIOS AL SECTOR PÚBLICO.";
+			break;
+			case "nosotros":
+				direccion="nosotros.html";
+				nombreServ="NOSOTROS.";
+			break;
+		}
+
+
+		
+			cambioAjax.fadeOut("fast",function(){
+					cambioAjax.load("cargaAjax/"+direccion,function(){
+						cambioAjax.fadeIn("fast", function(){
+							servAct.text(nombreServ);
+						});
+					});
+			});
+		
+	}
 	
 	/*-------- Menu Inicio --------*/
-	});
+});
 </script>

@@ -276,81 +276,79 @@
 <script type="text/javascript">
 $(function(){
 	/*-------- Servicios profesionales --------*/
-								$(".servProfesional").on({
-									mouseenter:function(){
-										if($(this).hasClass("seccionActiva") != true) {
-											var servicioProf =$(".servProfesional");
-											servicioProf.removeClass("seccionActiva",300);
-											$(this).addClass("seccionActiva",300);
-										}
-										
-										var idServicio = $(this).attr("id");
+	$(".servProfesional").on({
+		mouseenter:function(){
+			if($(this).hasClass("seccionActiva") != true) {
+				var servicioProf =$(".servProfesional");
+				servicioProf.removeClass("seccionActiva",300);
+				$(this).addClass("seccionActiva",300);
+			}
+			
+			var idServicio = $(this).attr("id");
 
-											switch(idServicio){
-												case "AsesoriaFiscal":
-													$(".servicioActual").text("Asesoría y Planeación Fiscal.");
-												break;
-												case "AsesoriaPlaneacionCorp":
-													$(".servicioActual").text("Asesoría y Planeación Corporativa.");
-												break;
-												case "AsesoriaNegocios":
-													$(".servicioActual").text("Asesoría en negocios.");
-												break;
-												case "AsesoPlanPatrimo":
-												 	$(".servicioActual").text("Asesoría y Planeación Patrimonial.");
-												break;
-												case "ServContFinan":
-													$(".servicioActual").text("Servicio Contable, Financiero, Fiscales.");
-												break;
-												case "AsesoPlaneaFinan":
-													$(".servicioActual").text("Asesoría y Planeación Financiera.");
-												break;
-												case "AsesoCtrlInt":
-													$(".servicioActual").text("Asesoría en Control Interno.");
-												break;
-												case "AudiFisFin":
-													$(".servicioActual").text("Auditoría Fiscal y Financiera.");
-												break;
-												case "ServFis":
-													$(".servicioActual").text("Servicios Fiscales.");
-												break;
-												case "ServLegalesCorp":
-													$(".servicioActual").text("Servicios legales, corporativos y patrimoniales.");
-												break;
-												case "outsourcing":
-													$(".servicioActual").text("Outsourcing.");
-												break;
-											}	
+				switch(idServicio){
+					case "AsesoriaFiscal":
+						$(".servicioActual").text("Asesoría y Planeación Fiscal.");
+					break;
+					case "AsesoriaPlaneacionCorp":
+						$(".servicioActual").text("Asesoría y Planeación Corporativa.");
+					break;
+					case "AsesoriaNegocios":
+						$(".servicioActual").text("Asesoría en negocios.");
+					break;
+					case "AsesoPlanPatrimo":
+					 	$(".servicioActual").text("Asesoría y Planeación Patrimonial.");
+					break;
+					case "ServContFinan":
+						$(".servicioActual").text("Servicio Contable, Financiero, Fiscales.");
+					break;
+					case "AsesoPlaneaFinan":
+						$(".servicioActual").text("Asesoría y Planeación Financiera.");
+					break;
+					case "AsesoCtrlInt":
+						$(".servicioActual").text("Asesoría en Control Interno.");
+					break;
+					case "AudiFisFin":
+						$(".servicioActual").text("Auditoría Fiscal y Financiera.");
+					break;
+					case "ServFis":
+						$(".servicioActual").text("Servicios Fiscales.");
+					break;
+					case "ServLegalesCorp":
+						$(".servicioActual").text("Servicios legales, corporativos y patrimoniales.");
+					break;
+					case "outsourcing":
+						$(".servicioActual").text("Outsourcing.");
+					break;
+				}	
 
-									},click:function(){
-										var idServicio = $(this).attr("id");
+		},click:function(){
+			var idServicio = $(this).attr("id");
 
-										$(".tituloServicio").on({
-											mouseenter:function(){
-												$(this).css({
-													"cursor":"pointer"
-												});
-											},click:function(){
-												$(".ajaxCambio").fadeOut("fast",function(){
-													$(".ajaxCambio").load("cargaAjax/servicio_Profesionales.html", function(){
-														$(".ajaxCambio").fadeIn("fast",function(){
-															$(".tituloServicio").css({
-																"cursor":"text"
-															});
-															$(".servicioActual").text("");
-														});
-													});
-												});
-											}
-										});
-
-										cargaServicio(idServicio);
-									}
-										
+			$(".tituloServicio").on({
+				mouseenter:function(){
+					$(this).css({
+						"cursor":"pointer"
+					});
+				},click:function(){
+					$(".ajaxCambio").fadeOut("fast",function(){
+						$(".ajaxCambio").load("cargaAjax/servicio_Profesionales.html", function(){
+							$(".ajaxCambio").fadeIn("fast",function(){
+								$(".tituloServicio").css({
+									"cursor":"text"
 								});
+								$(".servicioActual").text("Asesoría y Planeación Fiscal.");
+								$(".tituloServicio").unbind("load");
+							});
+						});
+					});
+				}
+			});
 
-/*-------- Servicios profesionales --------*/
-});
+			cargaServicio(idServicio);
+		}
+			
+	});
 	function cargaServicio(identificador){
 		var nombreServ;
 		var servAct = $(".servicioActual");
@@ -413,5 +411,6 @@ $(function(){
 				});
 		});
 	}
-
+/*-------- Servicios profesionales --------*/
+});
 </script>

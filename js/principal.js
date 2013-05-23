@@ -39,7 +39,7 @@ $(document).ready(function(){
 	
 
 	/*-------- Menu Inicio --------*/
-	$(".servicioElite").on({
+	$(".servicioElite").one({
 		mouseenter:function(event){
 			event.preventDefault();
 			if($(this).hasClass("seccionActiva") != true) {
