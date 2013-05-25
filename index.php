@@ -305,152 +305,159 @@
 					<div class="span12">
 						<div class="fondoCrema sombraCremaAdentro">
 							<div class="row-fluid">
-								<div class="span6">
-
+								<div class="span11 offset1">
 									<div class="row-fluid">
-										<div class="span11 offset1">
+										<div class="span7">
 											<div class="row-fluid">
-												<div class="span3">
-													<div class="color">
-														<div class="titulo">Nombre</div>
-													</div>
+												<div class="span12">
+													<div class="row-fluid">
+														<div class="span3">
+															<div class="color">
+																<div class="titulo">Nombre</div>
+															</div>
 
+														</div>
+														<div class="span9">
+															<div class="color fondoInput">
+																<input type="text" name="nombreEnvio" class="nombreMail">
+															</div>
+														</div>
+													</div>
+													<div class="row-fluid">
+														<div class="span12">
+															<div class="errorRojo errorNombre color">
+																
+															</div>		
+														</div>
+													</div>
 												</div>
-												<div class="span9">
-													<div class="color fondoInput">
-														<input type="text" name="nombreEnvio" class="nombreMail">
+											</div>
+												
+											<div class="row-fluid">
+												<div class="span12">
+													<div class="row-fluid">
+														<div class="span3">
+															<div class="color">
+																<div class="titulo">Email</div>
+															</div>
+
+														</div>
+														<div class="span9">
+															<div class="color fondoInput">
+																<input type="text" name="emailEnvio" class="emailMail">
+															</div>
+														</div>
+													</div>
+													<div class="row-fluid">
+														<div class="span12">
+															<div class="errorRojo errorEmail color">
+																
+															</div>		
+														</div>
 													</div>
 												</div>
 											</div>
 											<div class="row-fluid">
 												<div class="span12">
-													<div class="errorNombre color">
-														Error
-													</div>		
-												</div>
-											</div>
-										</div>
-									</div>
-										
-									<div class="row-fluid">
-										<div class="span11 offset1">
-											<div class="row-fluid">
-												<div class="span3">
-													<div class="color">
-														<div class="titulo">Email</div>
-													</div>
+													<div class="row-fluid">
+														<div class="span3">
+															<div class="color">
+																<div class="titulo">Asunto</div>
+															</div>
 
-												</div>
-												<div class="span9">
-													<div class="color fondoInput">
-														<input type="text" name="emailEnvio" class="emailMail">
+														</div>
+														<div class="span9">
+															<div class="color fondoInput">
+																<input type="text" name="asuntoEnvio" class="asuntoMail">
+															</div>
+														</div>
+													</div>
+													<div class="row-fluid">
+														<div class="span12">
+															<div class="errorRojo errorAsunto color">
+																
+															</div>		
+														</div>
 													</div>
 												</div>
 											</div>
 											<div class="row-fluid">
 												<div class="span12">
-													<div class="errorEmail color">
-														Error Mail
-													</div>		
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="row-fluid">
-										<div class="span11 offset1">
-											<div class="row-fluid">
-												<div class="span3">
-													<div class="color">
-														<div class="titulo">Asunto</div>
-													</div>
+													<div class="row-fluid">
+														<div class="span3">
+															<div class="color">
+																<div class="titulo">Mensaje</div>
+															</div>
 
-												</div>
-												<div class="span9">
-													<div class="color fondoInput">
-														<input type="text" name="asuntoEnvio" class="asuntoMail">
+														</div>
+														<div class="span9">
+															<div class="color fondoInput">
+																<textarea name="mensajeEnvio" class="mensajeMail" cols="30" rows="10"></textarea>
+																
+															</div>
+														</div>
+													</div>
+													<div class="row-fluid">
+														<div class="span12">
+															<div class="errorRojo errorMensaje color">
+																
+															</div>		
+														</div>
 													</div>
 												</div>
 											</div>
 											<div class="row-fluid">
 												<div class="span12">
-													<div class="errorAsunto color">
-														Error Asunto
-													</div>		
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="row-fluid">
-										<div class="span11 offset1">
-											<div class="row-fluid">
-												<div class="span3">
 													<div class="color">
-														<div class="titulo">Mensaje</div>
-													</div>
-
-												</div>
-												<div class="span9">
-													<div class="color fondoInput">
-														<input type="text" name="mensajeEnvio" class="mensajeMail">
-													</div>
-												</div>
-											</div>
-											<div class="row-fluid">
-												<div class="span12">
-													<div class="errorMensaje color">
-														Error Mensaje
-													</div>		
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="row-fluid">
-										<div class="span11 offset1">
-											<div class="color">
-												<div class="row-fluid">
-													<div class="span6">
-														<p>Todos los campos son obligatorios</p>
-													</div>
-													<div class="span6">
-														<div class="botonEnvio seccionActiva">
-															Enviar
+														<div class="row-fluid">
+															<div class="span6">
+																<div class="color">
+																	<p>Todos los campos son obligatorios</p>
+																</div>
+															</div>
+															<div class="span2 offset2">
+																<div class="color">
+																	<div class="botonEnvio seccionActiva">
+																		Enviar
+																	</div>
+																</div>
+															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									
-								</div>
-								<div class="span6">
-									<div class="row-fluid">
-										<div class="span12">
-											<div class="color">
-												<p>
-													Alud no. 902 Col. Jardines del Moral <br>
-													León, Gto, México <br>
-													c.p.37160
-												</p>
+										<div class="span4">
+											<div class="row-fluid">
+												<div class="span12">
+													<div class="color">
+														<p>
+															Alud no. 902 Col. Jardines del Moral <br>
+															León, Gto, México <br>
+															c.p.37160
+														</p>
+													</div>
+												</div>
 											</div>
-										</div>
-									</div>
-									<div class="row-fluid">
-										<div class="span12">
-											<div class="color">
-												<p>
-													52 (477) 7 79 65 00<br>
-													52 (477) 3 11 75 25<br>
-													52 (477) 3 11 77 40
-												</p>
+											<div class="row-fluid">
+												<div class="span12">
+													<div class="color">
+														<p>
+															52 (477) 7 79 65 00<br>
+															52 (477) 3 11 75 25<br>
+															52 (477) 3 11 77 40
+														</p>
+													</div>
+												</div>
 											</div>
-										</div>
-									</div>
-									<div class="row-fluid">
-										<div class="span12">
-											<div class="color">
-												<p>
-													foo@eliteconsultores.com.mx
-												</p>
+											<div class="row-fluid">
+												<div class="span12">
+													<div class="color">
+														<p>
+															foo@eliteconsultores.com.mx
+														</p>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>

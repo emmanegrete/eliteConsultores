@@ -39,7 +39,7 @@ $(document).ready(function(){
 	
 
 	/*-------- Menu Inicio --------*/
-	$(".servicioElite").one({
+	$(".servicioElite").on({
 		mouseenter:function(event){
 			event.preventDefault();
 			if($(this).hasClass("seccionActiva") != true) {
@@ -87,5 +87,75 @@ $(document).ready(function(){
 	});
 	
 	/*-------- Menu Inicio --------*/
+
+	/*-------------Envio de correos---------------*/
+	function enviarPorCorreo (click,cantidadInput,url,mensajeFinal){
+		var botonClick = $("#"+click);
+
+	}
+
+	$(".botonEnvio").on("click",function(){
+		var nombreMail = $(".nombreMail").val();
+		var emailMail = $(".emailMail").val();
+		var asuntoMail = $(".asuntoMail").val();
+		var mensajeMail = $(".mensajeMail").val();
+
+		var verificaCorreo = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+
+		var errorNombre = $(".errorNombre");
+		var errorCorreo = $(".errorEmail");
+		var errorAsunto = $(".errorAsunto");
+		var errorMensaje = $(".errorMensaje");
+
+		errorMensaje.text("");
+		errorNombre.text("");
+		errorAsunto.text("");
+		errorCorreo.text("");
+
+		if (!isEmpty(nombreMail)){ 
+			if(!isEmpty(emailMail)){
+				if(verificaCorreo.test(emailMail)){ 
+					if(!isEmpty(asuntoMail)){
+						if(!isEmpty(mensajeMail)){ 
+							var tipo = "POST"; 
+							var direccion = "envioCorreo.php"; 
+							$.post(direccion,{ nombreCorreo:nombreMail, emailCorreo:emailMail,asuntoCorreo:asuntoMail,mensajeCorreo:mensajeMail}, 
+								function(responde){
+									$(".botonEnvio").html("<p class='errorRojo'>"+responde+"</p>");
+									$(".botonEnvio").removeClass("seccionActiva").off("click");
+								}
+							);   
+						}else{
+
+							errorMensaje.text("¡Vamos! escríbenos algo.");
+							return false;     
+						} 
+					}else{ 
+						errorAsunto.text("¿Cuál es el asunto del mensaje?");
+						return false; 
+					}     
+				}else{ 
+					errorCorreo.text("Por favor escribe un correo válido.");
+					return false; 
+				}
+			}else{
+				errorCorreo.text("Ocupamos el correo para poder comunicarnos contigo.");
+			}
+		}else{     
+			errorNombre.text("Escribe tu nombre, es para un mejor servico.");
+			return false; 
+		}
+
+	});
+	
+
+	function isEmpty(obj) {
+	    if (typeof obj == 'undefined' || obj === null || obj === '') return true;
+	    if (typeof obj == 'number' && isNaN(obj)) return true;
+	    if (obj instanceof Date && isNaN(Number(obj))) return true;
+	    return false;
+	}
+
+	/*-------------Envio de correos---------------*/
 
 });
