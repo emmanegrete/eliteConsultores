@@ -185,7 +185,7 @@ $(function(){
 			if($(this).hasClass("seccionActiva") != true) {
 				var servicioProf =$(".servicioPublico");
 				servicioProf.removeClass("seccionActiva",300);
-					$(this).addClass("seccionActiva",300);
+					$(this).addClass("seccionActiva",100);
 			}
 
 			
@@ -242,6 +242,9 @@ $(function(){
 
 		 }
 	});
+	/*-------- Servicios al sector publico --------*/
+
+
 	function cargaServicio(identificador){
 		var nombreServ;
 		var servAct = $(".servicioActual");
@@ -289,5 +292,6 @@ $(function(){
 		});
 	}							
 	/*-------- Servicios al sector publico --------*/
+	
 });
 </script>

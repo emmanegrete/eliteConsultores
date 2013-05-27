@@ -12,45 +12,48 @@
 </head>
 <body>
 	<!-- MENU -->
-	<div class="row-fluid">
-		<div class="span12">
-			<div class="color">
-				<nav class="navbar">
-					<div class="navbar-inner">
-						<div class="container-fluid">
-							<button class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse" type="button" >
-					            <span class="icon-bar"></span> 
-					            <span class="icon-bar"></span>
-					            <span class="icon-bar"></span>
-					        </button>
-							<div class="brand">
-								<div class="color">
-									logo
+	<div class="menuAbsoluto alCien">
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="color">
+					<nav class="navbar">
+						<div class="navbar-inner">
+							<div class="container-fluid">
+								<button class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse" type="button" >
+						            <span class="icon-bar"></span> 
+						            <span class="icon-bar"></span>
+						            <span class="icon-bar"></span>
+						        </button>
+								<div class="brand">
+									<div class="color">
+										logo
+									</div>
+								</div>
+								<div class="nav-collapse collapse">
+									<ul class="nav">
+										<li><a class="scroll fuenteMenu" href="#todosServicios">SERVICIOS <br> PROFESIONALES </a></li>
+										<li><a class="scroll fuenteMenu" href="#todosServicios">SERVICIOS AL <br> SECTOR PRIVADO </a></li>
+										<li><a class="scroll fuenteMenu" href="#todosServicios">SERVICIOS AL <br> SECTOR PÚBLICO</a></li>
+										<li><a class="scroll fuenteMenu" href="#todosServicios">NOSOTROS</a></li>
+										<li><a class="scroll fuenteMenu" href="#localizanos">LOCALÍZANOS</a></li>
+										<li><a class="scroll fuenteMenu" href="#contactanos">CONTÁCTANOS</a></li>
+									</ul>
 								</div>
 							</div>
-							<div class="nav-collapse collapse">
-								<ul class="nav">
-									<li><a href="">SERVICIOS <br> PROFESIONALES </a></li>
-									<li><a href="">SERVICIOS AL <br> SECTOR PRIVADO </a></li>
-									<li><a href="">SERVICIOS AL <br> SECTOR PÚBLICO</a></li>
-									<li><a href="">NOSOTROS</a></li>
-									<li><a href="">LOCALÍZANOS</a></li>
-									<li><a href="">CONTÁCTANOS</a></li>
-								</ul>
-							</div>
 						</div>
-					</div>
-				</nav>
+					</nav>
+				</div>
 			</div>
 		</div>
-	</div><!-- MENU -->
+	</div>
+	<!-- MENU -->
 	
 
 	<!-- SOMOS ELITE -->
 	<div class="row-fluid">
 		<div class="span12">
 			<div class="span12">
-				<div data-stellar-background-ratio='0.5' class="color slide backgroundNaranja">
+				<div class="color slide backgroundNaranja ">
 					<div class="somoElite">
 						<h1>SOMOS ÉLITE.</h1>
 						<p>Una firma de jóvenes líderes especialistas en el área <span>FISCAL-CONTABLE-FINANCIERA 
@@ -65,8 +68,16 @@
 
 	<div class="row-fluid">
 		<div class="span12">
-			<div data-stellar-background-ratio='0.5' class="color slide fondoScroll">
-				scroll
+			<div class="color slide fondoScroll alCien">
+				<div class="letrasPallax primero alineaDer fixeado">
+					Cosa Parallx
+				</div>
+				<div class="segundo fixeado">
+					Cosa 2
+				</div>
+				<div class="tercero fixeado">
+					Cosa3
+				</div>
 			</div>
 		</div>
 	</div>
@@ -74,10 +85,10 @@
 	<!-- SERVICIOS -->
 	<div class="row-fluid">
 		<div class="span12">
-			<div data-stellar-background-ratio='0.5' class="color">
+			<div class="color">
 				<div class="row-fluid">
 					<div class="span12">
-						<div class="backgroundNaranja alCien">
+						<div class="backgroundNaranja alCien paddingTop20" id="todosServicios">
 							<div class="row-fluid">
 								<div class="span1">
 									<div class="padding20">
@@ -249,7 +260,7 @@
 
 	<div class="row-fluid">
 		<div class="span12">
-			<div data-stellar-background-ratio='0.5' class="color slide fondoScroll">
+			<div class="color slide fondoScroll" >
 				scroll
 			</div>
 		</div>
@@ -259,10 +270,10 @@
 
 	<div class="row-fluid">
 		<div class="span12">
-			<div data-stellar-background-ratio='0.5' class="color">
+			<div class="color ">
 				<div class="row-fluid">
 					<div class="span12">
-						<div class="backgroundNaranja alCien">
+						<div class="backgroundNaranja alCien paddingTop20" id="localizanos">
 							<div class="padding20">
 								<p class="textoCenefa">LOCALÍZANOS</p>
 							</div>
@@ -282,7 +293,7 @@
 
 	<div class="row-fluid">
 		<div class="span12">
-			<div data-stellar-background-ratio='0.5' class="color slide fondoScroll">
+			<div class="color slide fondoScroll">
 				scroll
 			</div>
 		</div>
@@ -291,10 +302,10 @@
 	<!-- CONTACTO -->
 	<div class="row-fluid">
 		<div class="span12">
-			<div data-stellar-background-ratio='0.5' class="color">
+			<div class="color">
 				<div class="row-fluid">
 					<div class="span12">
-						<div class="backgroundNaranja alCien">
+						<div class="backgroundNaranja alCien paddingTop20" id="contactanos">
 							<div class="padding20">
 								<p class="textoCenefa">CONTÁCTANOS</p>
 							</div>
@@ -303,7 +314,7 @@
 				</div>
 				<div class="row-fluid">
 					<div class="span12">
-						<div class="fondoCrema sombraCremaAdentro">
+						<div class="fondoCrema sombraCremaAdentro padding20">
 							<div class="row-fluid">
 								<div class="span11 offset1">
 									<div class="row-fluid">
@@ -472,7 +483,7 @@
 
 	<div class="row-fluid">
 		<div class="span12">
-			<div data-stellar-background-ratio='0.5' class="color slide fondoScroll">
+			<div class="color slide fondoScroll">
 				scroll
 			</div>
 		</div>
@@ -481,7 +492,7 @@
 	<!-- FOOTER -->
 	<div class="row-fluid">
 		<div class="span12">
-			<div data-stellar-background-ratio='0.5' class="color">
+			<div class="color">
 				<div class="row-fluid">
 					<div class="span12">
 						<div class="backgroundGris alCien sombraGrisAdentro letraBlanca">
@@ -522,28 +533,28 @@
 											<div class="span3">
 												<div class="color">
 													<div>
-														SERVICIOS PROFESIONALES
+														<a class="scroll" href="#todosServicios">SERVICIOS PROFESIONALES</a>
 													</div>
 												</div>
 											</div>
 											<div class="span3">
 												<div class="color">
 													<div>
-														SERVICIOS AL SECTOR PRIVADO
+														<a class="scroll" href="#todosServicios">SERVICIOS AL SECTOR PRIVADO</a>
 													</div>
 												</div>
 											</div>
 											<div class="span3">
 												<div class="color">
 													<div>
-														SERVICIOS AL SECTOR PÚBLICO
+														<a class="scroll" href="#todosServicios">SERVICIOS AL SECTOR PÚBLICO</a>
 													</div>
 												</div>
 											</div>
 											<div class="span3">
 												<div class="color">
 													<div>
-														NOSOTROS
+														<a class="scroll" href="#todosServicios">NOSOTROS</a>
 													</div>
 												</div>
 											</div>
@@ -552,14 +563,14 @@
 											<div class="span3">
 												<div class="color">
 													<div>
-														LOCALÍZANOS
+														<a class="scroll" href="#localizanos">LOCALÍZANOS</a>
 													</div>
 												</div>
 											</div>
 											<div class="span3">
 												<div class="color">
 													<div>
-														CONTÁCTANOS
+														<a class="scroll" href="#contactanos">CONTÁCTANOS</a>
 													</div>
 												</div>
 											</div>
@@ -578,7 +589,6 @@
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script type="text/javascript" src="js/modernizr.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 	<script type="text/javascript" src="js/principal.js"></script>
 </body>
 </html>

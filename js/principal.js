@@ -1,4 +1,14 @@
 $(document).ready(function(){
+	/*--- verifica si un elemento está vacio ---*/
+
+	function isEmpty(obj) {
+	    if (typeof obj == 'undefined' || obj === null || obj === '') return true;
+	    if (typeof obj == 'number' && isNaN(obj)) return true;
+	    if (obj instanceof Date && isNaN(Number(obj))) return true;
+	    return false;
+	}
+
+	/*--- verifica si un elemento está vacio ---*/
 	
 	function cargaInicio(identificador){
 		var nombreServ;
@@ -34,8 +44,6 @@ $(document).ready(function(){
 		});
 	}
 
-	$(window).stellar();
-
 	
 
 	/*-------- Menu Inicio --------*/
@@ -45,7 +53,7 @@ $(document).ready(function(){
 			if($(this).hasClass("seccionActiva") != true) {
 				var servicio =$(".servicioElite");
 				servicio.removeClass("seccionActiva",300);
-				$(this).addClass("seccionActiva",300);
+				$(this).addClass("seccionActiva",100);
 			}
 
 			
@@ -89,10 +97,13 @@ $(document).ready(function(){
 	/*-------- Menu Inicio --------*/
 
 	/*-------------Envio de correos---------------*/
+
+	/*
 	function enviarPorCorreo (click,cantidadInput,url,mensajeFinal){
 		var botonClick = $("#"+click);
 
 	}
+	*/
 
 	$(".botonEnvio").on("click",function(){
 		var nombreMail = $(".nombreMail").val();
@@ -128,34 +139,47 @@ $(document).ready(function(){
 						}else{
 
 							errorMensaje.text("¡Vamos! escríbenos algo.");
-							return false;     
+							noSeEnvio();   
 						} 
 					}else{ 
 						errorAsunto.text("¿Cuál es el asunto del mensaje?");
-						return false; 
+						noSeEnvio();
 					}     
 				}else{ 
 					errorCorreo.text("Por favor escribe un correo válido.");
-					return false; 
+					noSeEnvio();
 				}
 			}else{
 				errorCorreo.text("Ocupamos el correo para poder comunicarnos contigo.");
+				noSeEnvio();
 			}
 		}else{     
 			errorNombre.text("Escribe tu nombre, es para un mejor servico.");
-			return false; 
+			noSeEnvio();
 		}
 
 	});
 	
 
-	function isEmpty(obj) {
-	    if (typeof obj == 'undefined' || obj === null || obj === '') return true;
-	    if (typeof obj == 'number' && isNaN(obj)) return true;
-	    if (obj instanceof Date && isNaN(Number(obj))) return true;
-	    return false;
+/*-------------Envio de correos---------------*/
+/*----------- smooth scrooll -----------*/
+
+	$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+	});
+
+	function noSeEnvio(){
+		$('html,body').animate({scrollTop:$("#contactanos").offset().top}, 500);
+		return false;
 	}
 
-	/*-------------Envio de correos---------------*/
+/*----------- smooth scrooll -----------*/
+
+
 
 });
+
+
+
+

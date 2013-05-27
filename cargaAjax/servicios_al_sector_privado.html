@@ -197,66 +197,60 @@ $(function(){
 		});
 	}
 /*-------- Sector privado --------*/
-$(".servicioPrivado").on({
-	mouseenter:function(){
-		if($(this).hasClass("seccionActiva") != true) {
-			var servicio =$(".servicioPrivado");
-			servicio.removeClass("seccionActiva",300);
-			$(this).addClass("seccionActiva",300);
-		}
-		
-		var idServicio = $(this).attr("id");
+	$(".servicioPrivado").on({
+		mouseenter:function(){
+			if($(this).hasClass("seccionActiva") != true) {
+				var servicio =$(".servicioPrivado");
+				servicio.removeClass("seccionActiva",300);
+				$(this).addClass("seccionActiva",100);
+			}
+			
+			var idServicio = $(this).attr("id");
 
-			switch(idServicio){
-				case "auditoriaExterna":
-					$(".servicioActual").text("Auditoría Externa.");
-				break;
-				case "adminRiesgos":
-					$(".servicioActual").text("Administración de Riesgos.");
-				break;
-				case "diagOrganiza":
-				 	$(".servicioActual").text("Diagnóstico Organizacional.");
-				break;
-				case "consulNego":
-					$(".servicioActual").text("Consultoría de Negocios.");
-				break;
-				case "contraloExt":
-					$(".servicioActual").text("Contraloría Externa.");
-				break;
-				case "asesoDesaLabo":
-					$(".servicioActual").text("Asesoría y Desarrollo Laboral.");
-				break;
-			}	
+				switch(idServicio){
+					case "auditoriaExterna":
+						$(".servicioActual").text("Auditoría Externa.");
+					break;
+					case "adminRiesgos":
+						$(".servicioActual").text("Administración de Riesgos.");
+					break;
+					case "diagOrganiza":
+					 	$(".servicioActual").text("Diagnóstico Organizacional.");
+					break;
+					case "consulNego":
+						$(".servicioActual").text("Consultoría de Negocios.");
+					break;
+					case "contraloExt":
+						$(".servicioActual").text("Contraloría Externa.");
+					break;
+					case "asesoDesaLabo":
+						$(".servicioActual").text("Asesoría y Desarrollo Laboral.");
+					break;
+				}	
 
-	},click:function(){ 
+		},click:function(){ 
 
-		$(".tituloServicio").on({
-			mouseenter:function(){
-				$(this).css({
-					"cursor":"pointer"
-				});
-			},click:function(){
-				$(".ajaxCambio").fadeOut("fast",function(){
-					$(".ajaxCambio").load("cargaAjax/servicios_al_sector_privado.html", function(){
-						$(".ajaxCambio").fadeIn("fast",function(){
-							$(".tituloServicio").css({
-									"cursor":"text"
+			$(".tituloServicio").on({
+				mouseenter:function(){
+					$(this).css({"cursor":"pointer"});
+				},click:function(){
+					$(".ajaxCambio").fadeOut("fast",function(){
+						$(".ajaxCambio").load("cargaAjax/servicios_al_sector_privado.html", function(){
+							$(".ajaxCambio").fadeIn("fast",function(){
+								$(".tituloServicio").css({"cursor":"text"});
+								$(".servicioActual").text("");
+								$(".tituloServicio").off("click");
 							});
-							$(".servicioActual").text("");
-							$(".tituloServicio").off("click");
 						});
 					});
-				});
-			}
-		});	
+				}
+			});	
 
-		var idServicio = $(this).attr("id");
-		cargaServicio(idServicio);
-	 }
+			var idServicio = $(this).attr("id");
+			cargaServicio(idServicio);
+		 }
+	});
 });
-
 /*-------- Sector privado --------*/
-
-});
 	
 </script>
