@@ -45,7 +45,6 @@ if(isset($_POST['nombreCorreo']) && $_POST['nombreCorreo'] != "")
 				exit();
 			}
 			   
-		
 		}
 }
 // Function to validate against any email injection attempts

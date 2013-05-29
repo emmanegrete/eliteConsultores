@@ -25,16 +25,16 @@
 						            <span class="icon-bar"></span>
 						        </button>
 								<div class="brand">
-									<div class="color">
-										logo
+									<div class="color logo">
+										<a class="scroll" href="#inicio"><img src="img/eliteLogo.png" alt="logo Elite"></a>
 									</div>
 								</div>
 								<div class="nav-collapse collapse">
 									<ul class="nav">
-										<li><a class="scroll fuenteMenu" href="#todosServicios">SERVICIOS <br> PROFESIONALES </a></li>
-										<li><a class="scroll fuenteMenu" href="#todosServicios">SERVICIOS AL <br> SECTOR PRIVADO </a></li>
-										<li><a class="scroll fuenteMenu" href="#todosServicios">SERVICIOS AL <br> SECTOR PÚBLICO</a></li>
-										<li><a class="scroll fuenteMenu" href="#todosServicios">NOSOTROS</a></li>
+										<li><a class="scroll fuenteMenu" data-servicio="servProfesionales" href="#todosServicios">SERVICIOS <br> PROFESIONALES </a></li>
+										<li><a class="scroll fuenteMenu" data-servicio="servSectorPrivado" href="#todosServicios">SERVICIOS AL <br> SECTOR PRIVADO </a></li>
+										<li><a class="scroll fuenteMenu" data-servicio="servSectorPublico" href="#todosServicios">SERVICIOS AL <br> SECTOR PÚBLICO</a></li>
+										<li><a class="scroll fuenteMenu" data-servicio="nosotros" href="#todosServicios">NOSOTROS</a></li>
 										<li><a class="scroll fuenteMenu" href="#localizanos">LOCALÍZANOS</a></li>
 										<li><a class="scroll fuenteMenu" href="#contactanos">CONTÁCTANOS</a></li>
 									</ul>
@@ -52,8 +52,7 @@
 	<!-- SOMOS ELITE -->
 	<div class="row-fluid">
 		<div class="span12">
-			<div class="span12">
-				<div class="color slide backgroundNaranja ">
+				<div id="inicio" class="color slide backgroundNaranja ">
 					<div class="somoElite">
 						<h1>SOMOS ÉLITE.</h1>
 						<p>Una firma de jóvenes líderes especialistas en el área <span>FISCAL-CONTABLE-FINANCIERA 
@@ -62,25 +61,19 @@
 						<p>Con el firme propósito de apoyar y hacer crecer nuevos proyectos empresariales e impulsar y sostener proyectos ya establecidos en la región.</p>
 					</div>
 				</div>
-			</div>
 		</div>
 	</div><!-- SOMOS ELITE -->
-
+	
+	<!-- Intermedio -->
 	<div class="row-fluid">
 		<div class="span12">
-			<div class="color slide fondoScroll alCien">
-				<div class="letrasPallax primero alineaDer fixeado">
-					Cosa Parallx
-				</div>
-				<div class="segundo fixeado">
-					Cosa 2
-				</div>
-				<div class="tercero fixeado">
-					Cosa3
+			<div class="color fondoScroll alCien">
+				<div class="imagenScroll color alineaDer">
+					<img src="img/elite_consultores_fiscal_fianciero_legal_consultoria_sector_publico_privado_leon_guanajuato_mexico_1.png" alt="elite consultores servicios contaduria legales">
 				</div>
 			</div>
 		</div>
-	</div>
+	</div><!-- Intermedio -->
 
 	<!-- SERVICIOS -->
 	<div class="row-fluid">
@@ -117,7 +110,7 @@
 									<div class="span10 offset1">
 										<div class="row-fluid">
 											<div class="span6">
-												<div id="servProfesionales" class="color servicioElite padding10 margin10 sombraCremaAfuera seccionActiva">
+												<div id="servProfesionales" class="color servicioElite margin10 sombraCremaAfuera seccionActiva">
 													<div class="row-fluid">
 														<div class="span8">
 															<div class="row-fluid">
@@ -129,8 +122,8 @@
 															</div>
 															<div class="row-fluid">
 																<div class="span12">
-																	<div class="color">
-																		>
+																	<div class="color flechaColor alineaDer">
+																		
 																	</div>
 																</div>
 															</div>
@@ -139,7 +132,7 @@
 															<div class="row-fluid">
 																<div class="span12">
 																	<div class="imagenSolucion color">
-																		<img src="" alt="">
+																		<img src="img/servicios_profesionales_contabilidad_finanzas_fiscal_asesoria_negocios_consultores_consultoria_elite_icono.jpg" alt="servicios profesionales contabilidad finanzas fiscal asesoria negocios consultores consultoria elite">
 																	</div>
 																</div>
 															</div>
@@ -148,7 +141,7 @@
 												</div>	
 											</div>
 											<div class="span6">
-												<div id="servSectorPrivado" class="color servicioElite padding10 margin10 sombraCremaAfuera">
+												<div id="servSectorPrivado" class="color servicioElite margin10 sombraCremaAfuera">
 													<div class="row-fluid">
 														<div class="span8">
 															<div class="row-fluid">
@@ -160,8 +153,8 @@
 															</div>
 															<div class="row-fluid">
 																<div class="span12">
-																	<div class="color">
-																		>
+																	<div class="color flechaColor alineaDer">
+																		
 																	</div>
 																</div>
 															</div>
@@ -170,7 +163,7 @@
 															<div class="row-fluid">
 																<div class="span12">
 																	<div class="imagenSolucion color">
-																		<img src="" alt="">
+																		<img src="img/servicios_al_sector_privado_consultoria_negocios_consultores_finanzas_icono.jpg" alt="servicios al sector privado elite consultores consultoria negocios consultores finanzas">
 																	</div>
 																</div>
 															</div>
@@ -181,7 +174,7 @@
 										</div>
 										<div class="row-fluid">
 											<div class="span6">
-												<div id="servSectorPublico" class="color servicioElite padding10 margin10 sombraCremaAfuera">
+												<div id="servSectorPublico" class="color servicioElite margin10 sombraCremaAfuera">
 													<div class="row-fluid">
 														<div class="span8">
 															<div class="row-fluid">
@@ -193,8 +186,8 @@
 															</div>
 															<div class="row-fluid">
 																<div class="span12">
-																	<div class="color">
-																		>
+																	<div class="color flechaColor alineaDer">
+																		
 																	</div>
 																</div>
 															</div>
@@ -203,7 +196,7 @@
 															<div class="row-fluid">
 																<div class="span12">
 																	<div class="imagenSolucion color">
-																		<img src="" alt="">
+																		<img src="img/servicios_al_sector_publico_elite_consultores_consultoria_fiscal_negocios_contabilidad_innovacion_icono.jpg" alt="servicios al sector publico elite consultores consultoria fiscal negocios contabilidad innovacion">
 																	</div>
 																</div>
 															</div>
@@ -212,7 +205,7 @@
 												</div>
 											</div>
 											<div class="span6">
-												<div id="nosotros" class="color servicioElite padding10 margin10 sombraCremaAfuera">
+												<div id="nosotros" class="color servicioElite margin10 sombraCremaAfuera">
 													<div class="row-fluid">
 														<div class="span8">
 															<div class="row-fluid">
@@ -224,8 +217,10 @@
 															</div>
 															<div class="row-fluid">
 																<div class="span12">
-																	<div class="color">
-																		>
+																	<div class="color alineaDer">
+																		<div class="flechaColor">
+																			
+																		</div>
 																	</div>
 																</div>
 															</div>
@@ -234,7 +229,7 @@
 															<div class="row-fluid">
 																<div class="span12">
 																	<div class="imagenSolucion color">
-																		<img src="" alt="">
+																		<img src="img/nosotros_elite_consultores_consultoria_financiero_fiscal_soluciones_negocios_icono.jpg" alt="nosotros elite consultores consultoria financiero fiscal soluciones negocios">
 																	</div>
 																</div>
 															</div>
@@ -257,14 +252,17 @@
 			</div>
 		</div>
 	</div><!-- SERVICIOS -->
-
+	
+	<!-- Intermedio -->
 	<div class="row-fluid">
 		<div class="span12">
-			<div class="color slide fondoScroll" >
-				scroll
+			<div class="color fondoScroll alCien">
+				<div class="imagenScroll color alineaDer">
+					<img src="img/elite_consultores_fiscal_fianciero_legal_consultoria_sector_publico_privado_leon_guanajuato_mexico_2.png" alt="elite consultores servicios contaduria legales">
+				</div>
 			</div>
 		</div>
-	</div>
+	</div><!-- Intermedio -->
 
 	<!-- LOCALIZACION / MAPA -->
 
@@ -283,21 +281,26 @@
 				<div class="row-fluid">
 					<div class="span12">
 						<div class="mapaGoogle">
-							<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.mx/?ie=UTF8&amp;t=m&amp;ll=21.14289,-101.687586&amp;spn=0.004803,0.006866&amp;z=17&amp;output=embed"></iframe>							
+							<!-- <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.mx/?ie=UTF8&amp;t=m&amp;ll=21.14289,-101.687586&amp;spn=0.004803,0.006866&amp;z=17&amp;output=embed"></iframe>-->
+							<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.mx/maps/ms?t=m&amp;msa=0&amp;msid=205160301603541571439.0004ddb5d98eae8c588cb&amp;source=embed&amp;ie=UTF8&amp;z=17&amp;output=embed"></iframe>							
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div><!-- LOCALIZACION / MAPA -->
+	
 
+	<!-- Intermedio -->
 	<div class="row-fluid">
 		<div class="span12">
-			<div class="color slide fondoScroll">
-				scroll
+			<div class="color fondoScroll alCien">
+				<div class="imagenScroll color alineaDer">
+					<img src="img/elite_consultores_fiscal_fianciero_legal_consultoria_sector_publico_privado_leon_guanajuato_mexico_3.png" alt="elite consultores servicios contaduria legales">
+				</div>
 			</div>
 		</div>
-	</div>
+	</div><!-- Intermedio -->
 
 	<!-- CONTACTO -->
 	<div class="row-fluid">
@@ -481,13 +484,16 @@
 		</div>
 	</div><!-- CONTACTO -->
 
+	<!-- Intermedio -->
 	<div class="row-fluid">
 		<div class="span12">
-			<div class="color slide fondoScroll">
-				scroll
+			<div class="color fondoNegro alCien">
+				<div class="imagenScrollFinal color alineadoAlCentro">
+					<img src="img/logoFondo_web.jpg" alt="elite consultores servicios contaduria legales">
+				</div>
 			</div>
 		</div>
-	</div>
+	</div><!-- Intermedio -->
 
 	<!-- FOOTER -->
 	<div class="row-fluid">
@@ -533,28 +539,28 @@
 											<div class="span3">
 												<div class="color">
 													<div>
-														<a class="scroll" href="#todosServicios">SERVICIOS PROFESIONALES</a>
+														<a class="scroll letraRoja" data-servicio="servProfesionales" href="#todosServicios">SERVICIOS PROFESIONALES</a>
 													</div>
 												</div>
 											</div>
 											<div class="span3">
 												<div class="color">
 													<div>
-														<a class="scroll" href="#todosServicios">SERVICIOS AL SECTOR PRIVADO</a>
+														<a class="scroll letraRoja"  data-servicio="servSectorPrivado" href="#todosServicios">SERVICIOS AL SECTOR PRIVADO</a>
 													</div>
 												</div>
 											</div>
 											<div class="span3">
 												<div class="color">
 													<div>
-														<a class="scroll" href="#todosServicios">SERVICIOS AL SECTOR PÚBLICO</a>
+														<a class="scroll letraRoja" data-servicio="servSectorPublico" href="#todosServicios">SERVICIOS AL SECTOR PÚBLICO</a>
 													</div>
 												</div>
 											</div>
 											<div class="span3">
 												<div class="color">
 													<div>
-														<a class="scroll" href="#todosServicios">NOSOTROS</a>
+														<a class="scroll letraRoja" data-servicio="nosotros" href="#todosServicios">NOSOTROS</a>
 													</div>
 												</div>
 											</div>
@@ -563,14 +569,14 @@
 											<div class="span3">
 												<div class="color">
 													<div>
-														<a class="scroll" href="#localizanos">LOCALÍZANOS</a>
+														<a class="scroll letraRoja" href="#localizanos">LOCALÍZANOS</a>
 													</div>
 												</div>
 											</div>
 											<div class="span3">
 												<div class="color">
 													<div>
-														<a class="scroll" href="#contactanos">CONTÁCTANOS</a>
+														<a class="scroll letraRoja" href="#contactanos">CONTÁCTANOS</a>
 													</div>
 												</div>
 											</div>

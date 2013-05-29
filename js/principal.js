@@ -44,6 +44,21 @@ $(document).ready(function(){
 		});
 	}
 
+	function cargaServicios(){
+		$(".inicioServ").on({
+				mouseenter:function(){
+					$(this).css({"cursor":"pointer"});
+				},click:function(){
+					$(".ajaxCambio").fadeOut('fast',function(){
+						$(this).load("cargaAjax/inicioServ.html",function(){
+							$(this).fadeIn("fast");
+						});
+					});		
+					$(".servicioActual").text("");
+				}
+		});
+	}
+
 	
 
 	/*-------- Menu Inicio --------*/
@@ -76,18 +91,7 @@ $(document).ready(function(){
 
 		},click:function(){ 
 			
-			$(".inicioServ").on({
-				mouseenter:function(){
-					$(this).css({"cursor":"pointer"});
-				},click:function(){
-					$(".ajaxCambio").fadeOut('fast',function(){
-						$(this).load("cargaAjax/inicioServ.html",function(){
-							$(this).fadeIn("fast");
-						});
-					});		
-					$(".servicioActual").text("");
-				}
-			});
+			cargaServicios();
 
 			var idServicio = $(this).attr("id");
 			cargaInicio(idServicio);
@@ -164,9 +168,14 @@ $(document).ready(function(){
 /*-------------Envio de correos---------------*/
 /*----------- smooth scrooll -----------*/
 
-	$(".scroll").click(function(event){		
+	$(".scroll").click(function(event){
 			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+			var servicoData = $(this).data("servicio");
+			$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500,'swing', function(){
+				cargaServicios();
+				cargaInicio(servicoData);
+				
+			});
 	});
 
 	function noSeEnvio(){
