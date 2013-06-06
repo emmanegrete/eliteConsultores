@@ -6,6 +6,10 @@ body{
 a{
 	text-decoration: none;
 }
+
+ul li{
+	list-style-image:url("../img/puntoRojo.png");
+}
 .color{
 	border: 1px solid red;
 }
@@ -63,7 +67,9 @@ border: none;
 }
 
 .navbar .nav>li{
+	list-style: none;
 	padding: 10px 0 20px 0;
+
 }
 
 .navbar{
@@ -171,6 +177,10 @@ background-image: linear-gradient(to left, #969696 0%, #030303 100%);
 	margin:0.5em 0;
 }
 
+.paddingIzq{
+	padding: 0 0 0 0.7em;
+}
+
 .mapaGoogle iframe{
 	height: 450px;
 	width: 100%;
@@ -235,6 +245,31 @@ textarea{
 	width: auto;
 	height: 80px;
 }
+
+.resaltaTextoNaranja{
+	color: #ee3232;
+	font-weight: bold;
+}
+
+.navbar .btn-navbar {
+	background-color: #ee3232;
+	background-image: -moz-linear-gradient(top,##ee3232,##ee3232);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(##ee3232),to(##ee3232));
+	background-image: -webkit-linear-gradient(top,#ee3232,#ee3232);
+	background-image: -o-linear-gradient(top,#ee3232,#ee3232);
+	background-image: linear-gradient(to bottom,#ee3232,#ee3232);
+}
+.navbar .btn-navbar .icon-bar {
+	background-color: #f5f5f5;
+}
+.navbar .btn-navbar:hover, .navbar .btn-navbar:focus, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {
+	background-color: #ee3232;
+}
+
+.navbar .btn, .navbar .btn-group {
+	margin-top: 20px;
+}
+
 
     /* Large desktop */
     @media (min-width: 1200px) { 
