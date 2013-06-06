@@ -110,20 +110,19 @@
 									<div class="span10 offset1">
 										<div class="row-fluid">
 											<div class="span6">
-												<div id="servProfesionales" class="color servicioElite margin10 sombraCremaAfuera seccionActiva">
+												<div id="servProfesionales" class="servicioElite margin10 sombraCremaAfuera seccionActiva">
 													<div class="row-fluid">
 														<div class="span8">
 															<div class="row-fluid">
 																<div class="span12">
-																	<div class="color">
+																	<div class="">
 																		SERVICIOS PROFESIONALES
 																	</div>
 																</div>
 															</div>
 															<div class="row-fluid">
 																<div class="span12">
-																	<div class="color flechaColor alineaDer">
-																		
+																	<div class="flechaColorBlanca flecha alineaDer">
 																	</div>
 																</div>
 															</div>
@@ -131,7 +130,7 @@
 														<div class="span4">
 															<div class="row-fluid">
 																<div class="span12">
-																	<div class="imagenSolucion color">
+																	<div class="imagenSolucion">
 																		<img src="img/servicios_profesionales_contabilidad_finanzas_fiscal_asesoria_negocios_consultores_consultoria_elite_icono.jpg" alt="servicios profesionales contabilidad finanzas fiscal asesoria negocios consultores consultoria elite">
 																	</div>
 																</div>
@@ -141,19 +140,19 @@
 												</div>	
 											</div>
 											<div class="span6">
-												<div id="servSectorPrivado" class="color servicioElite margin10 sombraCremaAfuera">
+												<div id="servSectorPrivado" class=" servicioElite margin10 sombraCremaAfuera">
 													<div class="row-fluid">
 														<div class="span8">
 															<div class="row-fluid">
 																<div class="span12">
-																	<div class="color">
+																	<div class="">
 																		SERVICIOS AL SECTOR PRIVADO
 																	</div>
 																</div>
 															</div>
 															<div class="row-fluid">
 																<div class="span12">
-																	<div class="color flechaColor alineaDer">
+																	<div class="flechaColor flecha alineaDer">
 																		
 																	</div>
 																</div>
@@ -162,7 +161,7 @@
 														<div class="span4">
 															<div class="row-fluid">
 																<div class="span12">
-																	<div class="imagenSolucion color">
+																	<div class="imagenSolucion">
 																		<img src="img/servicios_al_sector_privado_consultoria_negocios_consultores_finanzas_icono.jpg" alt="servicios al sector privado elite consultores consultoria negocios consultores finanzas">
 																	</div>
 																</div>
@@ -174,19 +173,19 @@
 										</div>
 										<div class="row-fluid">
 											<div class="span6">
-												<div id="servSectorPublico" class="color servicioElite margin10 sombraCremaAfuera">
+												<div id="servSectorPublico" class="servicioElite margin10 sombraCremaAfuera">
 													<div class="row-fluid">
 														<div class="span8">
 															<div class="row-fluid">
 																<div class="span12">
-																	<div class="color">
+																	<div class="">
 																		SERVICIOS AL SECTOR PÚBLICO
 																	</div>
 																</div>
 															</div>
 															<div class="row-fluid">
 																<div class="span12">
-																	<div class="color flechaColor alineaDer">
+																	<div class="flechaColor flecha alineaDer">
 																		
 																	</div>
 																</div>
@@ -195,7 +194,7 @@
 														<div class="span4">
 															<div class="row-fluid">
 																<div class="span12">
-																	<div class="imagenSolucion color">
+																	<div class="imagenSolucion">
 																		<img src="img/servicios_al_sector_publico_elite_consultores_consultoria_fiscal_negocios_contabilidad_innovacion_icono.jpg" alt="servicios al sector publico elite consultores consultoria fiscal negocios contabilidad innovacion">
 																	</div>
 																</div>
@@ -205,20 +204,20 @@
 												</div>
 											</div>
 											<div class="span6">
-												<div id="nosotros" class="color servicioElite margin10 sombraCremaAfuera">
+												<div id="nosotros" class="servicioElite margin10 sombraCremaAfuera">
 													<div class="row-fluid">
 														<div class="span8">
 															<div class="row-fluid">
 																<div class="span12">
-																	<div class="color">
+																	<div class="">
 																		NOSOTROS
 																	</div>
 																</div>
 															</div>
 															<div class="row-fluid">
 																<div class="span12">
-																	<div class="color alineaDer">
-																		<div class="flechaColor">
+																	<div class="alineaDer">
+																		<div class="flechaColor flecha alineaDer">
 																			
 																		</div>
 																	</div>
@@ -228,7 +227,7 @@
 														<div class="span4">
 															<div class="row-fluid">
 																<div class="span12">
-																	<div class="imagenSolucion color">
+																	<div class="imagenSolucion">
 																		<img src="img/nosotros_elite_consultores_consultoria_financiero_fiscal_soluciones_negocios_icono.jpg" alt="nosotros elite consultores consultoria financiero fiscal soluciones negocios">
 																	</div>
 																</div>

@@ -67,10 +67,14 @@ $(document).ready(function(){
 			event.preventDefault();
 			if($(this).hasClass("seccionActiva") != true) {
 				var servicio =$(".servicioElite");
-				servicio.removeClass("seccionActiva",300);
-				$(this).addClass("seccionActiva",100);
+				servicio.removeClass("seccionActiva",300, function(){
+					$(this).find(".flecha").addClass("flechaColor").removeClass("flechaColorBlanca");
+				});
+				$(this).addClass("seccionActiva",100, function(){
+					$(this).find(".flecha").removeClass("flechaColor").addClass("flechaColorBlanca");
+				});
 			}
-
+			
 			
 			var idServicio = $(this).attr("id");
 

@@ -12,7 +12,7 @@ a{
 .slide{
 	background-attachment: fixed;
 	height: auto;
-	padding: 140px 0px;
+	padding: 80px 0px;
 	position: relative;
 	width: 100%;
 }
@@ -27,8 +27,19 @@ a{
 }
 
 .flechaColor{
-	background: url("../img/flechaNaranja.png")no-repeat;
-	background-size: 80px;
+	background: url("../img/flechaNaranja.png")no-repeat center center;
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-size: 40%;
+}
+
+.flechaColorBlanca{
+	background: url("../img/flechaBlanca.png")no-repeat center center;
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-size: 40%;
 }
 .navbar-inner{
 background: #333;
@@ -103,8 +114,8 @@ border: none;
 
 .somoElite{
 	color: #e8e7e7;
-	font-size: 1.5em;
-	padding: 0 5%;
+	font-size: 1em;
+	padding: 0 3%;
 }
 
 .seccionActiva{
@@ -146,6 +157,7 @@ background-image: linear-gradient(to left, #969696 0%, #030303 100%);
 .paddingTop20{
 	padding: 4em 0 0 0;
 }
+
 
 .padding20{
 	padding: 1.5em;
@@ -226,37 +238,84 @@ textarea{
 
     /* Large desktop */
     @media (min-width: 1200px) { 
+    	.somoElite{
+			font-size: 1.5em;
+			padding: 0 5%;
+		}
 		.fuenteMenu{
 			font-size: 0.9em;
+		}
+		.slide{
+			padding: 140px 0px;
 		}
     }
      
     /* Portrait tablet to landscape and desktop */
     @media (min-width: 768px) and (max-width: 1199px) {
 		.somoElite{
-			font-size: 1.5em;
+			font-size: 1.4em;
+			padding: 0 5%;
 		}
 		.fuenteMenu{
 			font-size: 0.7em;
+		}
+		.logo img {
+			height: 60px;
+		}
+		.padding20 {
+			padding: 1em;
+		}
+		.paddingTop20{
+			padding: 0;
 		}
     }
      
     /* Landscape phone to portrait tablet */
     @media (max-width: 767px) {
-		.somoElite{
-			font-size: 1.5em;
+    	.somoElite{
+			font-size: 1.1em;
+			padding: 0 4%;
 		}
 		.fuenteMenu{
-			font-size: 0.6em;
+			font-size: 0.7em;
 		}
+		.navbar .nav>li {
+			padding: 0;
+		}
+		.nav-collapse .nav > li > a:hover, .nav-collapse .nav > li > a:focus, .nav-collapse .dropdown-menu a:hover, .nav-collapse .dropdown-menu a:focus {
+			background-color:transparent;
+		}
+		.logo img {
+			height: 50px;
+		}
+		.padding20 {
+			padding: 1em;
+		}
+		.paddingTop20{
+			padding: 0;
+		}
+
     }
      
     /* Landscape phones and down */
     @media (max-width: 480px) {
-		.somoElite{
-			font-size: 1.3em;
-		}
+		
 		.fuenteMenu{
-			font-size: 1em;
+			font-size: 0.7em;
+		}
+		.navbar .nav>li {
+			padding: 0;
+		}
+		.nav-collapse .nav > li > a:hover, .nav-collapse .nav > li > a:focus, .nav-collapse .dropdown-menu a:hover, .nav-collapse .dropdown-menu a:focus {
+			background-color:transparent;
+		}
+		.logo img {
+			height: 50px;
+		}
+		.padding20 {
+			padding: .5em;
+		}
+		.paddingTop20{
+			padding: 0;
 		}
     }
