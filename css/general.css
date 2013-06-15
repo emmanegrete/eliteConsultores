@@ -1,6 +1,6 @@
 body{
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.3em;
+	font-size: 1em;
 	line-height: normal;
 }
 a{
@@ -10,9 +10,11 @@ a{
 ul li{
 	list-style-image:url("../img/puntoRojo.png");
 }
+/*
 .color{
 	border: 1px solid red;
 }
+*/
 .slide{
 	background-attachment: fixed;
 	height: auto;
@@ -21,36 +23,41 @@ ul li{
 	width: 100%;
 }
 .imagenScroll img{
-	height: auto;
-	width: 100%;
+	height: 160px;
+	width:auto;
 }
 
 .imagenScrollFinal img{
-	height: auto;
-	width: 80%;
+	height: 80px;
+	width: auto;
 }
 
 .flechaColor{
 	background: url("../img/flechaNaranja.png")no-repeat center center;
 	display: block;
-	width: 100px;
-	height: 100px;
-	background-size: 40%;
+	width: 60px;
+	height: 60px;
+	background-size: 45%;
 }
 
 .flechaColorBlanca{
 	background: url("../img/flechaBlanca.png")no-repeat center center;
 	display: block;
-	width: 100px;
-	height: 100px;
-	background-size: 40%;
+	width: 60px;
+	height: 60px;
+	background-size: 45%;
 }
 .navbar-inner{
-background: #333;
-border-radius: 0px;
-border: none;
+	background: url(../img/grano_background.jpg);
+	border-radius: 0px;
+	border: none;
 }
 
+.imagenSolucion img{
+	text-align: right;
+	width: 110px;
+	height: auto;
+}
 .navbar .nav>li>a, a.letraRoja{
 	-moz-transition: color 0.3s;
 	-ms-transition: color 0.3s;
@@ -110,12 +117,12 @@ border: none;
 }
 
 .sombraGrisAdentro{
-	-moz-box-shadow: inset 0px 5px 5px #323135;
-	-webkit-box-shadow: inset 0px 5px 5px #323135;
-	box-shadow: inset 0px 5px 5px #323135;
+	-moz-box-shadow: inset 0px 5px 5px #111111;
+	-webkit-box-shadow: inset 0px 5px 5px #111111;
+	box-shadow: inset 0px 5px 5px #111111;
 }
 .backgroundGris{
-	background-color: #49484e;
+	background-image: url(../img/grano_background.jpg);
 }
 
 .somoElite{
@@ -173,6 +180,10 @@ background-image: linear-gradient(to left, #969696 0%, #030303 100%);
 	padding: 0.5em;
 }
 
+.padding5{
+	padding: 0.3em;
+}
+
 .margin10{
 	margin:0.5em 0;
 }
@@ -182,7 +193,7 @@ background-image: linear-gradient(to left, #969696 0%, #030303 100%);
 }
 
 .mapaGoogle iframe{
-	height: 450px;
+	height: 220px;
 	width: 100%;
 
 }
@@ -273,8 +284,11 @@ textarea{
 
     /* Large desktop */
     @media (min-width: 1200px) { 
+    	body{
+			font-size: 1.3em;
+		}
     	.somoElite{
-			font-size: 1.5em;
+			font-size: 1.3em;
 			padding: 0 5%;
 		}
 		.fuenteMenu{
@@ -283,16 +297,46 @@ textarea{
 		.slide{
 			padding: 140px 0px;
 		}
+		.flechaColor{
+			width: 70px;
+			height: 70px;
+			background-size: 45%;
+		}
+
+		.flechaColorBlanca{
+			width: 70px;
+			height: 70px;
+			background-size: 45%;
+		}
+		.mapaGoogle iframe{
+			height: 450px;
+			width: 100%;
+
+		}
+		.imagenScroll img{
+			height: 350px;
+			width:auto;
+		}
+		.imagenScrollFinal img{
+			height: 150px;
+			width: auto;
+		}
+		.imagenSolucion img{
+			width: 250px;
+		}
     }
      
     /* Portrait tablet to landscape and desktop */
     @media (min-width: 768px) and (max-width: 1199px) {
+    	body{
+			font-size: 1em;
+		}
 		.somoElite{
-			font-size: 1.4em;
+			font-size: 1.3em;
 			padding: 0 5%;
 		}
 		.fuenteMenu{
-			font-size: 0.7em;
+			font-size: 0.9em;
 		}
 		.logo img {
 			height: 60px;
@@ -303,16 +347,28 @@ textarea{
 		.paddingTop20{
 			padding: 0;
 		}
+		.mapaGoogle iframe{
+			height: 450px;
+			width: 100%;
+
+		}
+		.imagenScroll img{
+			height: 250px;
+			width:auto;
+		}
+		.imagenSolucion img{
+			width: 220px;
+		}
     }
      
     /* Landscape phone to portrait tablet */
     @media (max-width: 767px) {
     	.somoElite{
-			font-size: 1.1em;
+			font-size: 1em;
 			padding: 0 4%;
 		}
 		.fuenteMenu{
-			font-size: 0.7em;
+			font-size: 0.8em;
 		}
 		.navbar .nav>li {
 			padding: 0;
@@ -336,7 +392,7 @@ textarea{
     @media (max-width: 480px) {
 		
 		.fuenteMenu{
-			font-size: 0.7em;
+			font-size: 0.8em;
 		}
 		.navbar .nav>li {
 			padding: 0;

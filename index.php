@@ -121,7 +121,7 @@
 																</div>
 															</div>
 															<div class="row-fluid">
-																<div class="span12">
+																<div class="span2 offset9">
 																	<div class="flechaColorBlanca flecha alineaDer">
 																	</div>
 																</div>
@@ -151,7 +151,7 @@
 																</div>
 															</div>
 															<div class="row-fluid">
-																<div class="span12">
+																<div class="span2 offset9">
 																	<div class="flechaColor flecha alineaDer">
 																		
 																	</div>
@@ -184,7 +184,7 @@
 																</div>
 															</div>
 															<div class="row-fluid">
-																<div class="span12">
+																<div class="span2 offset9">
 																	<div class="flechaColor flecha alineaDer">
 																		
 																	</div>
@@ -215,7 +215,7 @@
 																</div>
 															</div>
 															<div class="row-fluid">
-																<div class="span12">
+																<div class="span2 offset9">
 																	<div class="alineaDer">
 																		<div class="flechaColor flecha alineaDer">
 																			
@@ -430,7 +430,7 @@
 															</div>
 															<div class="span2 offset2">
 																<div class="color">
-																	<div class="botonEnvio seccionActiva">
+																	<div class="botonEnvio padding5 seccionActiva">
 																		Enviar
 																	</div>
 																</div>
@@ -501,9 +501,9 @@
 				<div class="row-fluid">
 					<div class="span12">
 						<div class="backgroundGris alCien sombraGrisAdentro letraBlanca">
-							<div class="padding20">
+							<div class="padding5">
 								<div class="row-fluid">
-									<div class="span4">
+									<div class="span2">
 										<div class="row-fluid">
 											<div class="span4">
 												<div class="imagenIcono">
@@ -533,46 +533,44 @@
 											</div>
 										</div>
 									</div>
-									<div class="span8">
+									<div class="span10">
 										<div class="row-fluid">
-											<div class="span3">
+											<div class="span2">
 												<div class="color">
 													<div>
 														<a class="scroll letraRoja" data-servicio="servProfesionales" href="#todosServicios">SERVICIOS PROFESIONALES</a>
 													</div>
 												</div>
 											</div>
-											<div class="span3">
+											<div class="span2">
 												<div class="color">
 													<div>
 														<a class="scroll letraRoja"  data-servicio="servSectorPrivado" href="#todosServicios">SERVICIOS AL SECTOR PRIVADO</a>
 													</div>
 												</div>
 											</div>
-											<div class="span3">
+											<div class="span2">
 												<div class="color">
 													<div>
 														<a class="scroll letraRoja" data-servicio="servSectorPublico" href="#todosServicios">SERVICIOS AL SECTOR PÚBLICO</a>
 													</div>
 												</div>
 											</div>
-											<div class="span3">
+											<div class="span2">
 												<div class="color">
 													<div>
 														<a class="scroll letraRoja" data-servicio="nosotros" href="#todosServicios">NOSOTROS</a>
 													</div>
 												</div>
 											</div>
-										</div>
-										<div class="row-fluid">
-											<div class="span3">
+											<div class="span2">
 												<div class="color">
 													<div>
 														<a class="scroll letraRoja" href="#localizanos">LOCALÍZANOS</a>
 													</div>
 												</div>
 											</div>
-											<div class="span3">
+											<div class="span2">
 												<div class="color">
 													<div>
 														<a class="scroll letraRoja" href="#contactanos">CONTÁCTANOS</a>

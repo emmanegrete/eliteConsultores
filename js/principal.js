@@ -67,7 +67,7 @@ $(document).ready(function(){
 			event.preventDefault();
 			if($(this).hasClass("seccionActiva") != true) {
 				var servicio =$(".servicioElite");
-				servicio.removeClass("seccionActiva",300, function(){
+				servicio.removeClass("seccionActiva",100, function(){
 					$(this).find(".flecha").addClass("flechaColor").removeClass("flechaColorBlanca");
 				});
 				$(this).addClass("seccionActiva",100, function(){

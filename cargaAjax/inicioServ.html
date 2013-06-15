@@ -13,9 +13,9 @@
 																</div>
 															</div>
 															<div class="row-fluid">
-																<div class="span12">
-																	<div class="color">
-																		>
+																<div class="span2 offset9">
+																	<div class="flechaColorBlanca flecha alineaDer">
+																		
 																	</div>
 																</div>
 															</div>
@@ -44,9 +44,9 @@
 																</div>
 															</div>
 															<div class="row-fluid">
-																<div class="span12">
-																	<div class="color">
-																		>
+																<div class="span2 offset9">
+																	<div class="flechaColor flecha alineaDer">
+																		
 																	</div>
 																</div>
 															</div>
@@ -77,9 +77,9 @@
 																</div>
 															</div>
 															<div class="row-fluid">
-																<div class="span12">
-																	<div class="color">
-																		>
+																<div class="span2 offset9">
+																	<div class="flechaColor flecha alineaDer">
+																		
 																	</div>
 																</div>
 															</div>
@@ -108,9 +108,9 @@
 																</div>
 															</div>
 															<div class="row-fluid">
-																<div class="span12">
-																	<div class="color">
-																		>
+																<div class="span2 offset9">
+																	<div class="flechaColor flecha alineaDer">
+																		
 																	</div>
 																</div>
 															</div>
@@ -143,8 +143,12 @@ $(function(){
 			event.preventDefault();
 			if($(this).hasClass("seccionActiva") != true) {
 				var servicio =$(".servicioElite");
-				servicio.removeClass("seccionActiva",300);
-				$(this).addClass("seccionActiva",300);
+				servicio.removeClass("seccionActiva",100, function(){
+					$(this).find(".flecha").addClass("flechaColor").removeClass("flechaColorBlanca");
+				});
+				$(this).addClass("seccionActiva",100, function(){
+					$(this).find(".flecha").removeClass("flechaColor").addClass("flechaColorBlanca");
+				});
 			}
 
 			
